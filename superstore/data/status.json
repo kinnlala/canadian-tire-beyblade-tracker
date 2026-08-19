@@ -1,0 +1,113 @@
+{
+  "schema_version": 1,
+  "product": {
+    "name": "Beyblade X Starter Pack Set Assortment",
+    "code": "21595715_EA",
+    "search_term": "Beyblade X Starter Pack",
+    "banner": "superstore"
+  },
+  "checked_at": null,
+  "known_store_count": 0,
+  "fresh_store_count": 0,
+  "last_run_alert": null,
+  "stores": {
+    "1012": {
+      "store_id": "1012",
+      "name": "Kingston Road",
+      "area": "Ajax",
+      "region": "Durham",
+      "address": "30 Kingston Rd W, Ajax, ON",
+      "status": null,
+      "raw_status": null,
+      "previous_status": null,
+      "fresh": false,
+      "last_success_at": null,
+      "last_observation": null,
+      "last_error": null
+    },
+    "1043": {
+      "store_id": "1043",
+      "name": "Harmony Road",
+      "area": "Oshawa",
+      "region": "Durham",
+      "address": "1385 Harmony Rd N, Oshawa, ON",
+      "status": null,
+      "raw_status": null,
+      "previous_status": null,
+      "fresh": false,
+      "last_success_at": null,
+      "last_observation": null,
+      "last_error": null
+    },
+    "1058": {
+      "store_id": "1058",
+      "name": "Taunton Road",
+      "area": "Whitby",
+      "region": "Durham",
+      "address": "200 Taunton Rd W, Whitby, ON",
+      "status": null,
+      "raw_status": null,
+      "previous_status": null,
+      "fresh": false,
+      "last_success_at": null,
+      "last_observation": null,
+      "last_error": null
+    },
+    "2842": {
+      "store_id": "2842",
+      "name": "Gibb Street",
+      "area": "Oshawa",
+      "region": "Durham",
+      "address": "481 Gibb St, Oshawa, ON",
+      "status": null,
+      "raw_status": null,
+      "previous_status": null,
+      "fresh": false,
+      "last_success_at": null,
+      "last_observation": null,
+      "last_error": null
+    },
+    "1018": {
+      "store_id": "1018",
+      "name": "Yonge Street",
+      "area": "Newmarket / East Gwillimbury",
+      "region": "York Region",
+      "address": "18120 Yonge St, East Gwillimbury, ON",
+      "status": null,
+      "raw_status": null,
+      "previous_status": null,
+      "fresh": false,
+      "last_success_at": null,
+      "last_observation": null,
+      "last_error": null
+    },
+    "1030": {
+      "store_id": "1030",
+      "name": "Bayview Avenue",
+      "area": "Aurora",
+      "region": "York Region",
+      "address": "15900 Bayview Ave, Aurora, ON",
+      "status": null,
+      "raw_status": null,
+      "previous_status": null,
+      "fresh": false,
+      "last_success_at": null,
+      "last_observation": null,
+      "last_error": null
+    },
+    "2831": {
+      "store_id": "2831",
+      "name": "Borden Avenue",
+      "area": "Peterborough",
+      "region": "Peterborough",
+      "address": "769 Borden Ave, Peterborough, ON",
+      "status": null,
+      "raw_status": null,
+      "previous_status": null,
+      "fresh": false,
+      "last_success_at": null,
+      "last_observation": null,
+      "last_error": null
+    }
+  }
+}
