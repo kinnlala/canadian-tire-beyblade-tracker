@@ -1,0 +1,77 @@
+name: Superstore Beyblade stock watch
+
+on:
+  schedule:
+    # Hourly, offset from the Canadian Tire workflow.
+    - cron: "37 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: superstore-beyblade-stock-watch
+  cancel-in-progress: false
+
+jobs:
+  check-stock:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+
+    defaults:
+      run:
+        working-directory: superstore
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: python -m pip install -r requirements.txt
+
+      - name: Decrypt latest rotating PC ID state
+        env:
+          PCEXPRESS_STATE_KEY: ${{ secrets.PCEXPRESS_STATE_KEY }}
+        run: python secure_state.py decrypt
+
+      - name: Check Superstore inventory
+        id: inventory
+        continue-on-error: true
+        env:
+          # Used only on the first run before encrypted state exists.
+          PCEXPRESS_REFRESH_TOKEN: ${{ secrets.PCEXPRESS_REFRESH_TOKEN }}
+        run: python tracker.py
+
+      - name: Re-encrypt latest rotating PC ID state
+        if: always()
+        env:
+          PCEXPRESS_STATE_KEY: ${{ secrets.PCEXPRESS_STATE_KEY }}
+        run: |
+          if [ -f .state/pcid_token_state.json ]; then
+            python secure_state.py encrypt
+          else
+            echo "No token state exists to encrypt."
+          fi
+
+      - name: Save tracker and encrypted token state
+        if: always()
+        working-directory: .
+        run: |
+          git config user.name "superstore-stock-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add superstore/data/
+          if git diff --cached --quiet; then
+            echo "No data changes to commit."
+          else
+            git commit -m "Update Superstore Beyblade inventory"
+            git push
+          fi
+
+      - name: Fail after saving state if tracker failed
+        if: steps.inventory.outcome == 'failure'
+        run: exit 1
