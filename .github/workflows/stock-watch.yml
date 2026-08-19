@@ -1,0 +1,49 @@
+name: Beyblade stock watch
+
+on:
+  schedule:
+    # GitHub schedules are UTC. Run once per hour, away from the top-of-hour rush.
+    - cron: "17 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: beyblade-stock-watch
+  cancel-in-progress: false
+
+jobs:
+  check-stock:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Check inventory
+        id: inventory
+        continue-on-error: true
+        run: python tracker.py
+
+      - name: Save inventory state
+        run: |
+          git config user.name "beyblade-stock-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/
+          if git diff --cached --quiet; then
+            echo "No data changes to commit."
+          else
+            git commit -m "Update Beyblade inventory"
+            git push
+          fi
+
+      - name: Fail after saving diagnostics if the tracker could not establish any baseline
+        if: steps.inventory.outcome == 'failure'
+        run: exit 1
