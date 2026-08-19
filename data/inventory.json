@@ -4,12 +4,16 @@
   "canadian_tire_item": "150-1281-6",
   "product": "BeyBlade X Starter Pack",
   "source": "StockTrack Canadian Tire",
-  "checked_at": null,
+  "checked_at": "2026-08-19T10:45:53Z",
   "baseline_complete": false,
   "fresh_store_count": 0,
   "known_store_count": 0,
   "last_run_alert": null,
-  "errors": {},
+  "errors": {
+    "Durham": "HTTP Error 403: Forbidden",
+    "York Region": "HTTP Error 403: Forbidden",
+    "Peterborough + Barrie": "HTTP Error 403: Forbidden"
+  },
   "stores": {
     "0187": {
       "name": "Whitby South",
@@ -251,5 +255,6 @@
       "fresh": false,
       "last_success_at": null
     }
-  }
+  },
+  "source_urls": {}
 }
