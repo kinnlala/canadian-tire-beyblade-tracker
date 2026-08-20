@@ -3,7 +3,7 @@
 Canadian Tire BeyBlade X Starter Pack stock tracker.
 
 Source:
-  StockTrack Canadian Tire public availability endpoint
+  Canadian Tire's own public web API (PriceAvailability)
 Target:
   Canadian Tire product #150-1281-6 / StockTrack SKU 1501281
 
@@ -30,13 +30,23 @@ import time
 import urllib.error
 import urllib.parse
 import urllib.request
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 from typing import Any
 
 SKU = "1501281"
 PRODUCT = "BeyBlade X Starter Pack"
 CANADIAN_TIRE_ITEM = "150-1281-6"
-BASE_URL = "https://stocktrack.ca/ct/availability.php"
+BASE_URL = "https://www.canadiantire.ca"
+PRICE_AVAILABILITY_PATH = "/api/v1/product/api/v2/product/sku/PriceAvailability"
+PCODE = SKU.lower() + "p"
+
+# Public client key embedded in Canadian Tire's web frontend.
+# If Canadian Tire rotates it, replace this value.
+CT_SUBSCRIPTION_KEY = (
+    os.getenv("CT_SUBSCRIPTION_KEY")
+    or "c01ef3612328420c9f5cd9277e815a0e"
+)
 
 ROOT = Path(__file__).resolve().parent
 DATA_DIR = ROOT / "data"
@@ -293,56 +303,147 @@ def extract_quantities(payload: Any, wanted: set[str]) -> dict[str, int]:
     return found
 
 
-def fetch_group(group: str, store_ids: list[str]) -> tuple[dict[str, int], str]:
-    params = urllib.parse.urlencode(
-        {"store": ",".join(store_ids), "sku": SKU, "src": "prod"}
-    )
-    url = f"{BASE_URL}?{params}"
-    headers = {
+def canadian_tire_headers() -> dict[str, str]:
+    return {
         "User-Agent": (
-            "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
-            "AppleWebKit/537.36 (KHTML, like Gecko) "
-            "Chrome/126.0 Safari/537.36"
+            "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:144.0) "
+            "Gecko/20100101 Firefox/144.0"
         ),
-        "Accept": "application/json,text/plain,*/*",
+        "Accept": "application/json, text/plain, */*",
         "Accept-Language": "en-CA,en;q=0.9",
-        "Referer": "https://stocktrack.ca/",
+        "ocp-apim-subscription-key": CT_SUBSCRIPTION_KEY,
+        "basesiteid": "CTR",
+        "bannerid": "CTR",
+        "service-client": "ctr/web",
+        "service-version": "v1",
+        "Referer": "https://www.canadiantire.ca/",
+        "Origin": "https://www.canadiantire.ca",
+        "Content-Type": "application/json",
         "Cache-Control": "no-cache",
         "Pragma": "no-cache",
     }
 
+
+def fetch_store_quantity(store_id: str) -> int:
+    """
+    Read exact store quantity from Canadian Tire's PriceAvailability API.
+
+    Current Canadian Tire web response:
+      skus[0].fulfillment.availability.quantity
+    """
+    params = urllib.parse.urlencode(
+        {
+            "lang": "en_CA",
+            "storeId": store_id,
+            "cache": "true",
+            "pCode": PCODE,
+        }
+    )
+    url = f"{BASE_URL}{PRICE_AVAILABILITY_PATH}?{params}"
+    body = json.dumps(
+        {"skus": [{"code": SKU, "lowStockThreshold": 0}]}
+    ).encode("utf-8")
+
     last_error: Exception | None = None
+
     for attempt in range(1, 4):
         try:
-            req = urllib.request.Request(url, headers=headers)
-            with urllib.request.urlopen(req, timeout=30) as response:
+            request = urllib.request.Request(
+                url,
+                data=body,
+                method="POST",
+                headers=canadian_tire_headers(),
+            )
+
+            with urllib.request.urlopen(request, timeout=30) as response:
                 raw = response.read()
                 charset = response.headers.get_content_charset() or "utf-8"
-                text = raw.decode(charset, errors="replace").strip()
+                payload = json.loads(raw.decode(charset, errors="replace"))
 
-            try:
-                payload = json.loads(text)
-            except json.JSONDecodeError as exc:
-                preview = re.sub(r"\s+", " ", text)[:240]
-                raise ValueError(
-                    f"{group}: response was not JSON; preview={preview!r}"
+            skus = payload.get("skus")
+            if not isinstance(skus, list) or not skus:
+                raise ValueError("PriceAvailability returned no SKU data")
+
+            sku_data = skus[0]
+            if not isinstance(sku_data, dict):
+                raise ValueError("PriceAvailability SKU data was malformed")
+
+            fulfillment = sku_data.get("fulfillment")
+            if not isinstance(fulfillment, dict):
+                raise ValueError("PriceAvailability returned no fulfillment data")
+
+            availability = fulfillment.get("availability")
+            if not isinstance(availability, dict):
+                raise ValueError("PriceAvailability returned no availability data")
+
+            qty = to_int(availability.get("quantity"))
+            if qty is None:
+                raise ValueError("PriceAvailability returned no numeric store quantity")
+
+            return qty
+
+        except urllib.error.HTTPError as exc:
+            last_error = exc
+
+            if exc.code == 401:
+                raise RuntimeError(
+                    "Canadian Tire API returned HTTP 401. "
+                    "The public API subscription key may have rotated."
                 ) from exc
 
-            quantities = extract_quantities(payload, set(store_ids))
-            if not quantities:
-                raise ValueError(
-                    f"{group}: JSON parsed but no requested store quantities were found"
-                )
+            if attempt < 3:
+                time.sleep(2 ** attempt)
 
-            return quantities, url
-
-        except (urllib.error.URLError, urllib.error.HTTPError, TimeoutError, ValueError) as exc:
+        except (
+            urllib.error.URLError,
+            TimeoutError,
+            json.JSONDecodeError,
+            ValueError,
+        ) as exc:
             last_error = exc
+
             if attempt < 3:
                 time.sleep(2 ** attempt)
 
     assert last_error is not None
-    raise RuntimeError(str(last_error))
+    raise RuntimeError(f"store {store_id}: {last_error}")
+
+
+def fetch_group(group: str, store_ids: list[str]) -> tuple[dict[str, int], str]:
+    """
+    Query Canadian Tire directly, preserving partial success.
+
+    Missing/failed stores are omitted. main() therefore retains their previous
+    known quantity instead of treating a failed request as zero.
+    """
+    quantities: dict[str, int] = {}
+    errors: list[str] = []
+
+    with ThreadPoolExecutor(max_workers=min(4, len(store_ids))) as executor:
+        futures = {
+            executor.submit(fetch_store_quantity, store_id): store_id
+            for store_id in store_ids
+        }
+
+        for future in as_completed(futures):
+            store_id = futures[future]
+            try:
+                quantities[store_id] = future.result()
+            except Exception as exc:
+                errors.append(f"{store_id}: {exc}")
+
+    if not quantities:
+        detail = "; ".join(errors[:5])
+        raise RuntimeError(
+            f"{group}: all Canadian Tire API requests failed"
+            + (f" ({detail})" if detail else "")
+        )
+
+    source = (
+        f"{BASE_URL}{PRICE_AVAILABILITY_PATH} "
+        f"(per-store POST; {len(quantities)}/{len(store_ids)} succeeded)"
+    )
+    return quantities, source
 
 
 def initial_inventory() -> dict[str, Any]:
@@ -351,7 +452,7 @@ def initial_inventory() -> dict[str, Any]:
         "sku": SKU,
         "canadian_tire_item": CANADIAN_TIRE_ITEM,
         "product": PRODUCT,
-        "source": "StockTrack Canadian Tire",
+        "source": "Canadian Tire PriceAvailability API",
         "checked_at": None,
         "baseline_complete": False,
         "fresh_store_count": 0,
@@ -413,7 +514,7 @@ def main() -> int:
             missing = [sid for sid in ids if sid not in quantities]
             if missing:
                 errors[group] = (
-                    "Endpoint succeeded but did not return quantities for: "
+                    "Canadian Tire API did not return quantities for: "
                     + ", ".join(missing)
                 )
         except Exception as exc:
