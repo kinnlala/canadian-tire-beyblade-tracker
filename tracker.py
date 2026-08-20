@@ -8,7 +8,7 @@ Target:
   Canadian Tire product #150-1281-6 / StockTrack SKU 1501281
 
 Behavior:
-  - Checks 24 selected stores.
+  - Checks GTA-wide Canadian Tire retail stores plus Peterborough and Barrie.
   - Establishes a baseline separately for each store the first time that store
     is successfully read.
   - Never treats missing/failed data as zero.
@@ -53,10 +53,26 @@ GROUPS: dict[str, list[str]] = {
         "0164", "0087", "0697", "0399", "0653", "0237",
         "0321", "0189", "0069", "0280", "0134",
     ],
+    "Toronto West + Central": [
+        "0019", "0070", "0119", "0126", "0150",
+        "0182", "0214", "0294", "0600", "0621",
+    ],
+    "Toronto East + North": [
+        "0030", "0175", "0192", "0209", "0264",
+        "0273", "0427", "0459", "0654",
+    ],
+    "Peel Region": [
+        "0010", "0152", "0169", "0197", "0241",
+        "0305", "0346", "0411", "0497", "0675",
+    ],
+    "Halton Region": [
+        "0122", "0140", "0143", "0159", "0412", "0424", "0429",
+    ],
     "Peterborough + Barrie": ["0081", "0660", "0006", "0444"],
 }
 
 STORES: dict[str, dict[str, str]] = {
+    # Durham Region
     "0187": {"name": "Whitby South", "area": "Whitby", "region": "Durham"},
     "0460": {"name": "Whitby North", "area": "Whitby", "region": "Durham"},
     "0075": {"name": "Oshawa Mid", "area": "Oshawa", "region": "Durham"},
@@ -67,6 +83,7 @@ STORES: dict[str, dict[str, str]] = {
     "0127": {"name": "Uxbridge", "area": "Uxbridge", "region": "Durham"},
     "0226": {"name": "Port Perry", "area": "Port Perry", "region": "Durham"},
 
+    # York Region
     "0164": {"name": "Markham", "area": "Markham", "region": "York Region"},
     "0087": {"name": "Richmond Hill", "area": "Richmond Hill", "region": "York Region"},
     "0697": {"name": "Richmond Hill North", "area": "Richmond Hill", "region": "York Region"},
@@ -79,6 +96,49 @@ STORES: dict[str, dict[str, str]] = {
     "0280": {"name": "Stouffville", "area": "Stouffville", "region": "York Region"},
     "0134": {"name": "Keswick", "area": "Keswick", "region": "York Region"},
 
+    # City of Toronto (including Scarborough, North York, Etobicoke)
+    "0019": {"name": "Lawrence & Allen Expwy", "area": "Toronto", "region": "Toronto"},
+    "0030": {"name": "Warden & Eglinton", "area": "Scarborough", "region": "Toronto"},
+    "0070": {"name": "The Queensway", "area": "Etobicoke", "region": "Toronto"},
+    "0119": {"name": "Islington & 401", "area": "Etobicoke", "region": "Toronto"},
+    "0126": {"name": "Yonge & Steeles", "area": "North York", "region": "Toronto"},
+    "0150": {"name": "Yonge & Church", "area": "Toronto", "region": "Toronto"},
+    "0175": {"name": "Cedarbrae", "area": "Scarborough", "region": "Toronto"},
+    "0182": {"name": "West Toronto (Stockyards)", "area": "Toronto", "region": "Toronto"},
+    "0192": {"name": "Sheppard Ave.", "area": "North York", "region": "Toronto"},
+    "0209": {"name": "Kingston Rd", "area": "Scarborough", "region": "Toronto"},
+    "0214": {"name": "Eglinton & Caledonia", "area": "Toronto", "region": "Toronto"},
+    "0264": {"name": "Agincourt", "area": "Scarborough", "region": "Toronto"},
+    "0273": {"name": "Main & Danforth", "area": "Toronto", "region": "Toronto"},
+    "0294": {"name": "Albion & Kipling", "area": "Etobicoke", "region": "Toronto"},
+    "0427": {"name": "Scarborough East (Rylander)", "area": "Scarborough", "region": "Toronto"},
+    "0459": {"name": "Eglinton & Laird", "area": "Toronto", "region": "Toronto"},
+    "0600": {"name": "Toronto Eaton Centre", "area": "Toronto", "region": "Toronto"},
+    "0621": {"name": "Liberty Village", "area": "Toronto", "region": "Toronto"},
+    "0654": {"name": "Leslie & Lake Shore", "area": "Toronto", "region": "Toronto"},
+
+    # Peel Region
+    "0010": {"name": "Brampton Shoppers World", "area": "Brampton", "region": "Peel Region"},
+    "0152": {"name": "Dixie & Dundas", "area": "Mississauga", "region": "Peel Region"},
+    "0169": {"name": "Meadowvale", "area": "Mississauga", "region": "Peel Region"},
+    "0197": {"name": "Bolton", "area": "Caledon / Bolton", "region": "Peel Region"},
+    "0241": {"name": "Southdown", "area": "Mississauga", "region": "Peel Region"},
+    "0305": {"name": "Bramalea", "area": "Brampton", "region": "Peel Region"},
+    "0346": {"name": "Mavis & Dundas", "area": "Mississauga", "region": "Peel Region"},
+    "0411": {"name": "Trinity Common", "area": "Brampton", "region": "Peel Region"},
+    "0497": {"name": "Heartland", "area": "Mississauga", "region": "Peel Region"},
+    "0675": {"name": "McLaughlin Road", "area": "Brampton", "region": "Peel Region"},
+
+    # Halton Region
+    "0122": {"name": "Burlington Fairview", "area": "Burlington", "region": "Halton Region"},
+    "0140": {"name": "Milton", "area": "Milton", "region": "Halton Region"},
+    "0143": {"name": "Oakville", "area": "Oakville", "region": "Halton Region"},
+    "0159": {"name": "Georgetown", "area": "Halton Hills / Georgetown", "region": "Halton Region"},
+    "0412": {"name": "Burlington North", "area": "Burlington", "region": "Halton Region"},
+    "0424": {"name": "Winston Churchill", "area": "Oakville", "region": "Halton Region"},
+    "0429": {"name": "Oakville North", "area": "Oakville", "region": "Halton Region"},
+
+    # Outside GTA retained from the original watch
     "0081": {"name": "Peterborough", "area": "Peterborough", "region": "Peterborough"},
     "0660": {"name": "Peterborough North", "area": "Peterborough", "region": "Peterborough"},
     "0006": {"name": "Barrie", "area": "Barrie", "region": "Barrie"},

@@ -50,6 +50,76 @@
       "address": "15900 Bayview Ave, Aurora, ON"
     },
     {
+      "store_id": "1033",
+      "name": "Gerry Fitzgerald / Dufferin & Steeles",
+      "area": "North York / Toronto",
+      "region": "Toronto",
+      "address": "51 Gerry Fitzgerald Dr, Toronto, ON"
+    },
+    {
+      "store_id": "1077",
+      "name": "Don Mills & Eglinton",
+      "area": "Toronto",
+      "region": "Toronto",
+      "address": "825 Don Mills Rd, Toronto, ON"
+    },
+    {
+      "store_id": "2800",
+      "name": "Weston Road",
+      "area": "Toronto / York",
+      "region": "Toronto",
+      "address": "2549 Weston Rd, Toronto, ON"
+    },
+    {
+      "store_id": "2809",
+      "name": "Brimley Road",
+      "area": "Scarborough / Toronto",
+      "region": "Toronto",
+      "address": "1755 Brimley Rd, Toronto, ON"
+    },
+    {
+      "store_id": "2801",
+      "name": "Steeles Avenue West",
+      "area": "Brampton",
+      "region": "Peel Region",
+      "address": "85 Steeles Ave W, Brampton, ON"
+    },
+    {
+      "store_id": "1080",
+      "name": "Argentia Road",
+      "area": "Mississauga",
+      "region": "Peel Region",
+      "address": "3050 Argentia Rd, Mississauga, ON"
+    },
+    {
+      "store_id": "2841",
+      "name": "Mavis Road",
+      "area": "Mississauga",
+      "region": "Peel Region",
+      "address": "3045 Mavis Rd, Mississauga, ON"
+    },
+    {
+      "store_id": "1024",
+      "name": "North Oakville",
+      "area": "Oakville",
+      "region": "Halton Region",
+      "address": "201 Oak Park Blvd, Oakville, ON"
+    },
+    {
+      "store_id": "2810",
+      "name": "Milton Main",
+      "area": "Milton",
+      "region": "Halton Region",
+      "address": "820 Main St E, Milton, ON"
+    },
+    {
+      "store_id": "2811",
+      "name": "Georgetown",
+      "area": "Halton Hills / Georgetown",
+      "region": "Halton Region",
+      "address": "171 Guelph St, Halton Hills, ON"
+    },
+    {
       "store_id": "2831",
       "name": "Borden Avenue",
       "area": "Peterborough",
@@ -58,6 +128,7 @@
     }
   ],
   "notes": [
+    "GTA coverage includes Toronto, Durham, York, Peel, and Halton, plus Peterborough retained from the original watch.",
     "Barrie is not included because no physical Real Canadian Superstore location was found in Barrie.",
     "NOT_RETURNED and request failures never overwrite the last known stock status."
   ]
