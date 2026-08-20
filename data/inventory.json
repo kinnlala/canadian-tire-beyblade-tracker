@@ -4,7 +4,7 @@
   "canadian_tire_item": "150-1281-6",
   "product": "BeyBlade X Starter Pack",
   "source": "StockTrack Canadian Tire",
-  "checked_at": "2026-08-20T13:10:47Z",
+  "checked_at": "2026-08-20T13:59:04Z",
   "baseline_complete": false,
   "fresh_store_count": 0,
   "known_store_count": 0,
@@ -12,6 +12,10 @@
   "errors": {
     "Durham": "HTTP Error 403: Forbidden",
     "York Region": "HTTP Error 403: Forbidden",
+    "Toronto West + Central": "HTTP Error 403: Forbidden",
+    "Toronto East + North": "HTTP Error 403: Forbidden",
+    "Peel Region": "HTTP Error 403: Forbidden",
+    "Halton Region": "HTTP Error 403: Forbidden",
     "Peterborough + Barrie": "HTTP Error 403: Forbidden"
   },
   "stores": {
@@ -209,6 +213,366 @@
       "name": "Keswick",
       "area": "Keswick",
       "region": "York Region",
+      "quantity": null,
+      "previous_quantity": null,
+      "delta": null,
+      "fresh": false,
+      "last_success_at": null
+    },
+    "0019": {
+      "name": "Lawrence & Allen Expwy",
+      "area": "Toronto",
+      "region": "Toronto",
+      "quantity": null,
+      "previous_quantity": null,
+      "delta": null,
+      "fresh": false,
+      "last_success_at": null
+    },
+    "0030": {
+      "name": "Warden & Eglinton",
+      "area": "Scarborough",
+      "region": "Toronto",
+      "quantity": null,
+      "previous_quantity": null,
+      "delta": null,
+      "fresh": false,
+      "last_success_at": null
+    },
+    "0070": {
+      "name": "The Queensway",
+      "area": "Etobicoke",
+      "region": "Toronto",
+      "quantity": null,
+      "previous_quantity": null,
+      "delta": null,
+      "fresh": false,
+      "last_success_at": null
+    },
+    "0119": {
+      "name": "Islington & 401",
+      "area": "Etobicoke",
+      "region": "Toronto",
+      "quantity": null,
+      "previous_quantity": null,
+      "delta": null,
+      "fresh": false,
+      "last_success_at": null
+    },
+    "0126": {
+      "name": "Yonge & Steeles",
+      "area": "North York",
+      "region": "Toronto",
+      "quantity": null,
+      "previous_quantity": null,
+      "delta": null,
+      "fresh": false,
+      "last_success_at": null
+    },
+    "0150": {
+      "name": "Yonge & Church",
+      "area": "Toronto",
+      "region": "Toronto",
+      "quantity": null,
+      "previous_quantity": null,
+      "delta": null,
+      "fresh": false,
+      "last_success_at": null
+    },
+    "0175": {
+      "name": "Cedarbrae",
+      "area": "Scarborough",
+      "region": "Toronto",
+      "quantity": null,
+      "previous_quantity": null,
+      "delta": null,
+      "fresh": false,
+      "last_success_at": null
+    },
+    "0182": {
+      "name": "West Toronto (Stockyards)",
+      "area": "Toronto",
+      "region": "Toronto",
+      "quantity": null,
+      "previous_quantity": null,
+      "delta": null,
+      "fresh": false,
+      "last_success_at": null
+    },
+    "0192": {
+      "name": "Sheppard Ave.",
+      "area": "North York",
+      "region": "Toronto",
+      "quantity": null,
+      "previous_quantity": null,
+      "delta": null,
+      "fresh": false,
+      "last_success_at": null
+    },
+    "0209": {
+      "name": "Kingston Rd",
+      "area": "Scarborough",
+      "region": "Toronto",
+      "quantity": null,
+      "previous_quantity": null,
+      "delta": null,
+      "fresh": false,
+      "last_success_at": null
+    },
+    "0214": {
+      "name": "Eglinton & Caledonia",
+      "area": "Toronto",
+      "region": "Toronto",
+      "quantity": null,
+      "previous_quantity": null,
+      "delta": null,
+      "fresh": false,
+      "last_success_at": null
+    },
+    "0264": {
+      "name": "Agincourt",
+      "area": "Scarborough",
+      "region": "Toronto",
+      "quantity": null,
+      "previous_quantity": null,
+      "delta": null,
+      "fresh": false,
+      "last_success_at": null
+    },
+    "0273": {
+      "name": "Main & Danforth",
+      "area": "Toronto",
+      "region": "Toronto",
+      "quantity": null,
+      "previous_quantity": null,
+      "delta": null,
+      "fresh": false,
+      "last_success_at": null
+    },
+    "0294": {
+      "name": "Albion & Kipling",
+      "area": "Etobicoke",
+      "region": "Toronto",
+      "quantity": null,
+      "previous_quantity": null,
+      "delta": null,
+      "fresh": false,
+      "last_success_at": null
+    },
+    "0427": {
+      "name": "Scarborough East (Rylander)",
+      "area": "Scarborough",
+      "region": "Toronto",
+      "quantity": null,
+      "previous_quantity": null,
+      "delta": null,
+      "fresh": false,
+      "last_success_at": null
+    },
+    "0459": {
+      "name": "Eglinton & Laird",
+      "area": "Toronto",
+      "region": "Toronto",
+      "quantity": null,
+      "previous_quantity": null,
+      "delta": null,
+      "fresh": false,
+      "last_success_at": null
+    },
+    "0600": {
+      "name": "Toronto Eaton Centre",
+      "area": "Toronto",
+      "region": "Toronto",
+      "quantity": null,
+      "previous_quantity": null,
+      "delta": null,
+      "fresh": false,
+      "last_success_at": null
+    },
+    "0621": {
+      "name": "Liberty Village",
+      "area": "Toronto",
+      "region": "Toronto",
+      "quantity": null,
+      "previous_quantity": null,
+      "delta": null,
+      "fresh": false,
+      "last_success_at": null
+    },
+    "0654": {
+      "name": "Leslie & Lake Shore",
+      "area": "Toronto",
+      "region": "Toronto",
+      "quantity": null,
+      "previous_quantity": null,
+      "delta": null,
+      "fresh": false,
+      "last_success_at": null
+    },
+    "0010": {
+      "name": "Brampton Shoppers World",
+      "area": "Brampton",
+      "region": "Peel Region",
+      "quantity": null,
+      "previous_quantity": null,
+      "delta": null,
+      "fresh": false,
+      "last_success_at": null
+    },
+    "0152": {
+      "name": "Dixie & Dundas",
+      "area": "Mississauga",
+      "region": "Peel Region",
+      "quantity": null,
+      "previous_quantity": null,
+      "delta": null,
+      "fresh": false,
+      "last_success_at": null
+    },
+    "0169": {
+      "name": "Meadowvale",
+      "area": "Mississauga",
+      "region": "Peel Region",
+      "quantity": null,
+      "previous_quantity": null,
+      "delta": null,
+      "fresh": false,
+      "last_success_at": null
+    },
+    "0197": {
+      "name": "Bolton",
+      "area": "Caledon / Bolton",
+      "region": "Peel Region",
+      "quantity": null,
+      "previous_quantity": null,
+      "delta": null,
+      "fresh": false,
+      "last_success_at": null
+    },
+    "0241": {
+      "name": "Southdown",
+      "area": "Mississauga",
+      "region": "Peel Region",
+      "quantity": null,
+      "previous_quantity": null,
+      "delta": null,
+      "fresh": false,
+      "last_success_at": null
+    },
+    "0305": {
+      "name": "Bramalea",
+      "area": "Brampton",
+      "region": "Peel Region",
+      "quantity": null,
+      "previous_quantity": null,
+      "delta": null,
+      "fresh": false,
+      "last_success_at": null
+    },
+    "0346": {
+      "name": "Mavis & Dundas",
+      "area": "Mississauga",
+      "region": "Peel Region",
+      "quantity": null,
+      "previous_quantity": null,
+      "delta": null,
+      "fresh": false,
+      "last_success_at": null
+    },
+    "0411": {
+      "name": "Trinity Common",
+      "area": "Brampton",
+      "region": "Peel Region",
+      "quantity": null,
+      "previous_quantity": null,
+      "delta": null,
+      "fresh": false,
+      "last_success_at": null
+    },
+    "0497": {
+      "name": "Heartland",
+      "area": "Mississauga",
+      "region": "Peel Region",
+      "quantity": null,
+      "previous_quantity": null,
+      "delta": null,
+      "fresh": false,
+      "last_success_at": null
+    },
+    "0675": {
+      "name": "McLaughlin Road",
+      "area": "Brampton",
+      "region": "Peel Region",
+      "quantity": null,
+      "previous_quantity": null,
+      "delta": null,
+      "fresh": false,
+      "last_success_at": null
+    },
+    "0122": {
+      "name": "Burlington Fairview",
+      "area": "Burlington",
+      "region": "Halton Region",
+      "quantity": null,
+      "previous_quantity": null,
+      "delta": null,
+      "fresh": false,
+      "last_success_at": null
+    },
+    "0140": {
+      "name": "Milton",
+      "area": "Milton",
+      "region": "Halton Region",
+      "quantity": null,
+      "previous_quantity": null,
+      "delta": null,
+      "fresh": false,
+      "last_success_at": null
+    },
+    "0143": {
+      "name": "Oakville",
+      "area": "Oakville",
+      "region": "Halton Region",
+      "quantity": null,
+      "previous_quantity": null,
+      "delta": null,
+      "fresh": false,
+      "last_success_at": null
+    },
+    "0159": {
+      "name": "Georgetown",
+      "area": "Halton Hills / Georgetown",
+      "region": "Halton Region",
+      "quantity": null,
+      "previous_quantity": null,
+      "delta": null,
+      "fresh": false,
+      "last_success_at": null
+    },
+    "0412": {
+      "name": "Burlington North",
+      "area": "Burlington",
+      "region": "Halton Region",
+      "quantity": null,
+      "previous_quantity": null,
+      "delta": null,
+      "fresh": false,
+      "last_success_at": null
+    },
+    "0424": {
+      "name": "Winston Churchill",
+      "area": "Oakville",
+      "region": "Halton Region",
+      "quantity": null,
+      "previous_quantity": null,
+      "delta": null,
+      "fresh": false,
+      "last_success_at": null
+    },
+    "0429": {
+      "name": "Oakville North",
+      "area": "Oakville",
+      "region": "Halton Region",
       "quantity": null,
       "previous_quantity": null,
       "delta": null,
