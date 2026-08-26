@@ -6,9 +6,9 @@
     "search_term": "Beyblade X Starter Pack",
     "banner": "superstore"
   },
-  "checked_at": "2026-08-26T18:21:01Z",
+  "checked_at": "2026-08-26T21:08:01Z",
   "known_store_count": 15,
-  "fresh_store_count": 9,
+  "fresh_store_count": 12,
   "last_run_alert": null,
   "stores": {
     "1012": {
@@ -35,7 +35,7 @@
       "raw_status": "OK",
       "previous_status": "OK",
       "fresh": true,
-      "last_success_at": "2026-08-26T18:21:01Z",
+      "last_success_at": "2026-08-26T21:08:01Z",
       "last_observation": "OK",
       "last_error": null
     },
@@ -48,10 +48,10 @@
       "status": "OK",
       "raw_status": "OK",
       "previous_status": "OK",
-      "fresh": false,
-      "last_success_at": "2026-08-26T16:03:39Z",
-      "last_observation": "ERROR",
-      "last_error": "500 Server Error: Internal Server Error for url: https://api.pcexpress.ca/pcx-bff/api/v1/products/search"
+      "fresh": true,
+      "last_success_at": "2026-08-26T21:08:01Z",
+      "last_observation": "OK",
+      "last_error": null
     },
     "2842": {
       "store_id": "2842",
@@ -63,7 +63,7 @@
       "raw_status": "OK",
       "previous_status": "OK",
       "fresh": true,
-      "last_success_at": "2026-08-26T18:21:01Z",
+      "last_success_at": "2026-08-26T21:08:01Z",
       "last_observation": "OK",
       "last_error": null
     },
@@ -77,7 +77,7 @@
       "raw_status": "OK",
       "previous_status": "OK",
       "fresh": true,
-      "last_success_at": "2026-08-26T18:21:01Z",
+      "last_success_at": "2026-08-26T21:08:01Z",
       "last_observation": "OK",
       "last_error": null
     },
@@ -90,10 +90,10 @@
       "status": "OK",
       "raw_status": "OK",
       "previous_status": "OK",
-      "fresh": false,
-      "last_success_at": "2026-08-26T16:03:39Z",
-      "last_observation": "ERROR",
-      "last_error": "504 Server Error: Gateway Time-out for url: https://api.pcexpress.ca/pcx-bff/api/v1/products/search"
+      "fresh": true,
+      "last_success_at": "2026-08-26T21:08:01Z",
+      "last_observation": "OK",
+      "last_error": null
     },
     "1033": {
       "store_id": "1033",
@@ -105,7 +105,7 @@
       "raw_status": "OK",
       "previous_status": "OK",
       "fresh": true,
-      "last_success_at": "2026-08-26T18:21:01Z",
+      "last_success_at": "2026-08-26T21:08:01Z",
       "last_observation": "OK",
       "last_error": null
     },
@@ -118,10 +118,10 @@
       "status": "LOW",
       "raw_status": "LOW",
       "previous_status": "LOW",
-      "fresh": false,
-      "last_success_at": "2026-08-26T16:03:39Z",
-      "last_observation": "ERROR",
-      "last_error": "500 Server Error: Internal Server Error for url: https://api.pcexpress.ca/pcx-bff/api/v1/products/search"
+      "fresh": true,
+      "last_success_at": "2026-08-26T21:08:01Z",
+      "last_observation": "LOW",
+      "last_error": null
     },
     "2800": {
       "store_id": "2800",
@@ -147,7 +147,7 @@
       "raw_status": "OK",
       "previous_status": "OK",
       "fresh": true,
-      "last_success_at": "2026-08-26T18:21:01Z",
+      "last_success_at": "2026-08-26T21:08:01Z",
       "last_observation": "OK",
       "last_error": null
     },
@@ -175,7 +175,7 @@
       "raw_status": "OK",
       "previous_status": "OK",
       "fresh": true,
-      "last_success_at": "2026-08-26T18:21:01Z",
+      "last_success_at": "2026-08-26T21:08:01Z",
       "last_observation": "OK",
       "last_error": null
     },
@@ -189,7 +189,7 @@
       "raw_status": "OK",
       "previous_status": "OK",
       "fresh": true,
-      "last_success_at": "2026-08-26T18:21:01Z",
+      "last_success_at": "2026-08-26T21:08:01Z",
       "last_observation": "OK",
       "last_error": null
     },
@@ -203,7 +203,7 @@
       "raw_status": "OK",
       "previous_status": "OK",
       "fresh": true,
-      "last_success_at": "2026-08-26T18:21:01Z",
+      "last_success_at": "2026-08-26T21:08:01Z",
       "last_observation": "OK",
       "last_error": null
     },
@@ -245,16 +245,13 @@
       "raw_status": "OK",
       "previous_status": "OK",
       "fresh": true,
-      "last_success_at": "2026-08-26T18:21:01Z",
+      "last_success_at": "2026-08-26T21:08:01Z",
       "last_observation": "OK",
       "last_error": null
     }
   },
   "errors": {
     "1012": "Product not returned by successful search",
-    "1058": "500 Server Error: Internal Server Error for url: https://api.pcexpress.ca/pcx-bff/api/v1/products/search",
-    "1030": "504 Server Error: Gateway Time-out for url: https://api.pcexpress.ca/pcx-bff/api/v1/products/search",
-    "1077": "500 Server Error: Internal Server Error for url: https://api.pcexpress.ca/pcx-bff/api/v1/products/search",
     "2800": "Product not returned by successful search",
     "2801": "Product not returned by successful search",
     "2810": "Product not returned by successful search",
