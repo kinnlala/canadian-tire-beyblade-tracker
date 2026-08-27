@@ -6,7 +6,7 @@
     "search_term": "Beyblade X Starter Pack",
     "banner": "superstore"
   },
-  "checked_at": "2026-08-27T11:58:49Z",
+  "checked_at": "2026-08-27T22:32:14Z",
   "known_store_count": 16,
   "fresh_store_count": 3,
   "last_run_alert": null,
@@ -19,9 +19,9 @@
       "address": "30 Kingston Rd W, Ajax, ON",
       "status": "OUT",
       "raw_status": "OUT",
-      "previous_status": null,
+      "previous_status": "OUT",
       "fresh": true,
-      "last_success_at": "2026-08-27T11:58:49Z",
+      "last_success_at": "2026-08-27T22:32:14Z",
       "last_observation": "OUT",
       "last_error": null
     },
@@ -147,7 +147,7 @@
       "raw_status": "OK",
       "previous_status": "OK",
       "fresh": true,
-      "last_success_at": "2026-08-27T11:58:49Z",
+      "last_success_at": "2026-08-27T22:32:14Z",
       "last_observation": "OK",
       "last_error": null
     },
@@ -189,7 +189,7 @@
       "raw_status": "OK",
       "previous_status": "OK",
       "fresh": true,
-      "last_success_at": "2026-08-27T11:58:49Z",
+      "last_success_at": "2026-08-27T22:32:14Z",
       "last_observation": "OK",
       "last_error": null
     },
