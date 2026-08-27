@@ -6,9 +6,9 @@
     "search_term": "Beyblade X Starter Pack",
     "banner": "superstore"
   },
-  "checked_at": "2026-08-27T01:01:23Z",
-  "known_store_count": 15,
-  "fresh_store_count": 12,
+  "checked_at": "2026-08-27T11:58:49Z",
+  "known_store_count": 16,
+  "fresh_store_count": 3,
   "last_run_alert": null,
   "stores": {
     "1012": {
@@ -17,12 +17,12 @@
       "area": "Ajax",
       "region": "Durham",
       "address": "30 Kingston Rd W, Ajax, ON",
-      "status": null,
-      "raw_status": null,
+      "status": "OUT",
+      "raw_status": "OUT",
       "previous_status": null,
-      "fresh": false,
-      "last_success_at": null,
-      "last_observation": "NOT_RETURNED",
+      "fresh": true,
+      "last_success_at": "2026-08-27T11:58:49Z",
+      "last_observation": "OUT",
       "last_error": null
     },
     "1043": {
@@ -34,9 +34,9 @@
       "status": "OK",
       "raw_status": "OK",
       "previous_status": "OK",
-      "fresh": true,
+      "fresh": false,
       "last_success_at": "2026-08-27T01:01:23Z",
-      "last_observation": "OK",
+      "last_observation": "NOT_RETURNED",
       "last_error": null
     },
     "1058": {
@@ -48,9 +48,9 @@
       "status": "OK",
       "raw_status": "OK",
       "previous_status": "OK",
-      "fresh": true,
+      "fresh": false,
       "last_success_at": "2026-08-27T01:01:23Z",
-      "last_observation": "OK",
+      "last_observation": "NOT_RETURNED",
       "last_error": null
     },
     "2842": {
@@ -62,9 +62,9 @@
       "status": "OK",
       "raw_status": "OK",
       "previous_status": "OK",
-      "fresh": true,
+      "fresh": false,
       "last_success_at": "2026-08-27T01:01:23Z",
-      "last_observation": "OK",
+      "last_observation": "NOT_RETURNED",
       "last_error": null
     },
     "1018": {
@@ -76,9 +76,9 @@
       "status": "OK",
       "raw_status": "OK",
       "previous_status": "OK",
-      "fresh": true,
+      "fresh": false,
       "last_success_at": "2026-08-27T01:01:23Z",
-      "last_observation": "OK",
+      "last_observation": "NOT_RETURNED",
       "last_error": null
     },
     "1030": {
@@ -90,9 +90,9 @@
       "status": "OK",
       "raw_status": "OK",
       "previous_status": "OK",
-      "fresh": true,
+      "fresh": false,
       "last_success_at": "2026-08-27T01:01:23Z",
-      "last_observation": "OK",
+      "last_observation": "NOT_RETURNED",
       "last_error": null
     },
     "1033": {
@@ -104,9 +104,9 @@
       "status": "OK",
       "raw_status": "OK",
       "previous_status": "OK",
-      "fresh": true,
+      "fresh": false,
       "last_success_at": "2026-08-27T01:01:23Z",
-      "last_observation": "OK",
+      "last_observation": "NOT_RETURNED",
       "last_error": null
     },
     "1077": {
@@ -118,9 +118,9 @@
       "status": "LOW",
       "raw_status": "LOW",
       "previous_status": "LOW",
-      "fresh": true,
+      "fresh": false,
       "last_success_at": "2026-08-27T01:01:23Z",
-      "last_observation": "LOW",
+      "last_observation": "NOT_RETURNED",
       "last_error": null
     },
     "2800": {
@@ -147,7 +147,7 @@
       "raw_status": "OK",
       "previous_status": "OK",
       "fresh": true,
-      "last_success_at": "2026-08-27T01:01:23Z",
+      "last_success_at": "2026-08-27T11:58:49Z",
       "last_observation": "OK",
       "last_error": null
     },
@@ -174,9 +174,9 @@
       "status": "OK",
       "raw_status": "OK",
       "previous_status": "OK",
-      "fresh": true,
+      "fresh": false,
       "last_success_at": "2026-08-27T01:01:23Z",
-      "last_observation": "OK",
+      "last_observation": "NOT_RETURNED",
       "last_error": null
     },
     "2841": {
@@ -189,7 +189,7 @@
       "raw_status": "OK",
       "previous_status": "OK",
       "fresh": true,
-      "last_success_at": "2026-08-27T01:01:23Z",
+      "last_success_at": "2026-08-27T11:58:49Z",
       "last_observation": "OK",
       "last_error": null
     },
@@ -202,9 +202,9 @@
       "status": "OK",
       "raw_status": "OK",
       "previous_status": "OK",
-      "fresh": true,
+      "fresh": false,
       "last_success_at": "2026-08-27T01:01:23Z",
-      "last_observation": "OK",
+      "last_observation": "NOT_RETURNED",
       "last_error": null
     },
     "2810": {
@@ -244,17 +244,26 @@
       "status": "OK",
       "raw_status": "OK",
       "previous_status": "OK",
-      "fresh": true,
+      "fresh": false,
       "last_success_at": "2026-08-27T01:01:23Z",
-      "last_observation": "OK",
+      "last_observation": "NOT_RETURNED",
       "last_error": null
     }
   },
   "errors": {
-    "1012": "Product not returned by successful search",
+    "1043": "Product not returned by successful search",
+    "1058": "Product not returned by successful search",
+    "2842": "Product not returned by successful search",
+    "1018": "Product not returned by successful search",
+    "1030": "Product not returned by successful search",
+    "1033": "Product not returned by successful search",
+    "1077": "Product not returned by successful search",
     "2800": "Product not returned by successful search",
     "2801": "Product not returned by successful search",
+    "1080": "Product not returned by successful search",
+    "1024": "Product not returned by successful search",
     "2810": "Product not returned by successful search",
-    "2811": "Product not returned by successful search"
+    "2811": "Product not returned by successful search",
+    "2831": "Product not returned by successful search"
   }
 }
