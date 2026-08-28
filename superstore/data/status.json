@@ -6,9 +6,9 @@
     "search_term": "Beyblade X Starter Pack",
     "banner": "superstore"
   },
-  "checked_at": "2026-08-27T22:32:14Z",
+  "checked_at": "2026-08-28T06:16:33Z",
   "known_store_count": 16,
-  "fresh_store_count": 3,
+  "fresh_store_count": 6,
   "last_run_alert": null,
   "stores": {
     "1012": {
@@ -21,7 +21,7 @@
       "raw_status": "OUT",
       "previous_status": "OUT",
       "fresh": true,
-      "last_success_at": "2026-08-27T22:32:14Z",
+      "last_success_at": "2026-08-28T06:16:33Z",
       "last_observation": "OUT",
       "last_error": null
     },
@@ -132,9 +132,9 @@
       "status": "OK",
       "raw_status": "OK",
       "previous_status": "OK",
-      "fresh": false,
-      "last_success_at": "2026-08-20T21:56:34Z",
-      "last_observation": "NOT_RETURNED",
+      "fresh": true,
+      "last_success_at": "2026-08-28T06:16:33Z",
+      "last_observation": "OK",
       "last_error": null
     },
     "2809": {
@@ -147,7 +147,7 @@
       "raw_status": "OK",
       "previous_status": "OK",
       "fresh": true,
-      "last_success_at": "2026-08-27T22:32:14Z",
+      "last_success_at": "2026-08-28T06:16:33Z",
       "last_observation": "OK",
       "last_error": null
     },
@@ -189,7 +189,7 @@
       "raw_status": "OK",
       "previous_status": "OK",
       "fresh": true,
-      "last_success_at": "2026-08-27T22:32:14Z",
+      "last_success_at": "2026-08-28T06:16:33Z",
       "last_observation": "OK",
       "last_error": null
     },
@@ -216,9 +216,9 @@
       "status": "OK",
       "raw_status": "OK",
       "previous_status": "OK",
-      "fresh": false,
-      "last_success_at": "2026-08-20T17:59:43Z",
-      "last_observation": "NOT_RETURNED",
+      "fresh": true,
+      "last_success_at": "2026-08-28T06:16:33Z",
+      "last_observation": "OK",
       "last_error": null
     },
     "2811": {
@@ -230,9 +230,9 @@
       "status": "OK",
       "raw_status": "OK",
       "previous_status": "OK",
-      "fresh": false,
-      "last_success_at": "2026-08-20T17:59:43Z",
-      "last_observation": "NOT_RETURNED",
+      "fresh": true,
+      "last_success_at": "2026-08-28T06:16:33Z",
+      "last_observation": "OK",
       "last_error": null
     },
     "2831": {
@@ -258,12 +258,9 @@
     "1030": "Product not returned by successful search",
     "1033": "Product not returned by successful search",
     "1077": "Product not returned by successful search",
-    "2800": "Product not returned by successful search",
     "2801": "Product not returned by successful search",
     "1080": "Product not returned by successful search",
     "1024": "Product not returned by successful search",
-    "2810": "Product not returned by successful search",
-    "2811": "Product not returned by successful search",
     "2831": "Product not returned by successful search"
   }
 }
