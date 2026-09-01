@@ -1,4 +1,26 @@
 {
   "schema_version": 1,
-  "events": []
+  "events": [
+    {
+      "event_id": "20260901T184655Z-d4647d8e43",
+      "checked_at": "2026-09-01T18:46:55Z",
+      "product": {
+        "name": "Beyblade X Starter Pack Set Assortment",
+        "code": "21595715_EA",
+        "search_term": "Beyblade X Starter Pack",
+        "banner": "superstore"
+      },
+      "changes": [
+        {
+          "store_id": "1012",
+          "store_name": "Kingston Road",
+          "area": "Ajax",
+          "region": "Durham",
+          "address": "30 Kingston Rd W, Ajax, ON",
+          "previous": "OUT",
+          "current": "OK"
+        }
+      ]
+    }
+  ]
 }
