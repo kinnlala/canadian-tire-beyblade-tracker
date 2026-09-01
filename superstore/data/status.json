@@ -6,30 +6,10 @@
     "search_term": "Beyblade X Starter Pack",
     "banner": "superstore"
   },
-  "checked_at": "2026-09-01T18:46:55Z",
+  "checked_at": "2026-09-01T21:58:15Z",
   "known_store_count": 16,
   "fresh_store_count": 6,
-  "last_run_alert": {
-    "event_id": "20260901T184655Z-d4647d8e43",
-    "checked_at": "2026-09-01T18:46:55Z",
-    "product": {
-      "name": "Beyblade X Starter Pack Set Assortment",
-      "code": "21595715_EA",
-      "search_term": "Beyblade X Starter Pack",
-      "banner": "superstore"
-    },
-    "changes": [
-      {
-        "store_id": "1012",
-        "store_name": "Kingston Road",
-        "area": "Ajax",
-        "region": "Durham",
-        "address": "30 Kingston Rd W, Ajax, ON",
-        "previous": "OUT",
-        "current": "OK"
-      }
-    ]
-  },
+  "last_run_alert": null,
   "stores": {
     "1012": {
       "store_id": "1012",
@@ -39,9 +19,9 @@
       "address": "30 Kingston Rd W, Ajax, ON",
       "status": "OK",
       "raw_status": "OK",
-      "previous_status": "OUT",
+      "previous_status": "OK",
       "fresh": true,
-      "last_success_at": "2026-09-01T18:46:55Z",
+      "last_success_at": "2026-09-01T21:58:15Z",
       "last_observation": "OK",
       "last_error": null
     },
@@ -153,7 +133,7 @@
       "raw_status": "OK",
       "previous_status": "OK",
       "fresh": true,
-      "last_success_at": "2026-09-01T18:46:55Z",
+      "last_success_at": "2026-09-01T21:58:15Z",
       "last_observation": "OK",
       "last_error": null
     },
@@ -167,7 +147,7 @@
       "raw_status": "OK",
       "previous_status": "OK",
       "fresh": true,
-      "last_success_at": "2026-09-01T18:46:55Z",
+      "last_success_at": "2026-09-01T21:58:15Z",
       "last_observation": "OK",
       "last_error": null
     },
@@ -209,7 +189,7 @@
       "raw_status": "OK",
       "previous_status": "OK",
       "fresh": true,
-      "last_success_at": "2026-09-01T18:46:55Z",
+      "last_success_at": "2026-09-01T21:58:15Z",
       "last_observation": "OK",
       "last_error": null
     },
@@ -237,7 +217,7 @@
       "raw_status": "OK",
       "previous_status": "OK",
       "fresh": true,
-      "last_success_at": "2026-09-01T18:46:55Z",
+      "last_success_at": "2026-09-01T21:58:15Z",
       "last_observation": "OK",
       "last_error": null
     },
@@ -251,7 +231,7 @@
       "raw_status": "OK",
       "previous_status": "OK",
       "fresh": true,
-      "last_success_at": "2026-09-01T18:46:55Z",
+      "last_success_at": "2026-09-01T21:58:15Z",
       "last_observation": "OK",
       "last_error": null
     },
