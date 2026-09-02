@@ -6,7 +6,7 @@
     "search_term": "Beyblade X Starter Pack",
     "banner": "superstore"
   },
-  "checked_at": "2026-09-02T18:55:45Z",
+  "checked_at": "2026-09-02T21:57:06Z",
   "known_store_count": 16,
   "fresh_store_count": 6,
   "last_run_alert": null,
@@ -21,7 +21,7 @@
       "raw_status": "OK",
       "previous_status": "OK",
       "fresh": true,
-      "last_success_at": "2026-09-02T18:55:45Z",
+      "last_success_at": "2026-09-02T21:57:06Z",
       "last_observation": "OK",
       "last_error": null
     },
@@ -133,7 +133,7 @@
       "raw_status": "OK",
       "previous_status": "OK",
       "fresh": true,
-      "last_success_at": "2026-09-02T18:55:45Z",
+      "last_success_at": "2026-09-02T21:57:06Z",
       "last_observation": "OK",
       "last_error": null
     },
@@ -147,7 +147,7 @@
       "raw_status": "OK",
       "previous_status": "OK",
       "fresh": true,
-      "last_success_at": "2026-09-02T18:55:45Z",
+      "last_success_at": "2026-09-02T21:57:06Z",
       "last_observation": "OK",
       "last_error": null
     },
@@ -189,7 +189,7 @@
       "raw_status": "OK",
       "previous_status": "OK",
       "fresh": true,
-      "last_success_at": "2026-09-02T18:55:45Z",
+      "last_success_at": "2026-09-02T21:57:06Z",
       "last_observation": "OK",
       "last_error": null
     },
@@ -217,7 +217,7 @@
       "raw_status": "OK",
       "previous_status": "OK",
       "fresh": true,
-      "last_success_at": "2026-09-02T18:55:45Z",
+      "last_success_at": "2026-09-02T21:57:06Z",
       "last_observation": "OK",
       "last_error": null
     },
@@ -231,7 +231,7 @@
       "raw_status": "OK",
       "previous_status": "OK",
       "fresh": true,
-      "last_success_at": "2026-09-02T18:55:45Z",
+      "last_success_at": "2026-09-02T21:57:06Z",
       "last_observation": "OK",
       "last_error": null
     },
