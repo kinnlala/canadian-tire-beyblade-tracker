@@ -6,30 +6,10 @@
     "search_term": "Beyblade X Starter Pack",
     "banner": "superstore"
   },
-  "checked_at": "2026-09-04T05:01:19Z",
+  "checked_at": "2026-09-04T09:53:59Z",
   "known_store_count": 16,
   "fresh_store_count": 16,
-  "last_run_alert": {
-    "event_id": "20260904T050119Z-1dda0d4d82",
-    "checked_at": "2026-09-04T05:01:19Z",
-    "product": {
-      "name": "Beyblade X Starter Pack Set Assortment",
-      "code": "21595715_EA",
-      "search_term": "Beyblade X Starter Pack",
-      "banner": "superstore"
-    },
-    "changes": [
-      {
-        "store_id": "1077",
-        "store_name": "Don Mills & Eglinton",
-        "area": "Toronto",
-        "region": "Toronto",
-        "address": "825 Don Mills Rd, Toronto, ON",
-        "previous": "LOW",
-        "current": "OK"
-      }
-    ]
-  },
+  "last_run_alert": null,
   "stores": {
     "1012": {
       "store_id": "1012",
@@ -41,7 +21,7 @@
       "raw_status": "OK",
       "previous_status": "OK",
       "fresh": true,
-      "last_success_at": "2026-09-04T05:01:19Z",
+      "last_success_at": "2026-09-04T09:53:59Z",
       "last_observation": "OK",
       "last_error": null
     },
@@ -55,7 +35,7 @@
       "raw_status": "OK",
       "previous_status": "OK",
       "fresh": true,
-      "last_success_at": "2026-09-04T05:01:19Z",
+      "last_success_at": "2026-09-04T09:53:59Z",
       "last_observation": "OK",
       "last_error": null
     },
@@ -69,7 +49,7 @@
       "raw_status": "OK",
       "previous_status": "OK",
       "fresh": true,
-      "last_success_at": "2026-09-04T05:01:19Z",
+      "last_success_at": "2026-09-04T09:53:59Z",
       "last_observation": "OK",
       "last_error": null
     },
@@ -83,7 +63,7 @@
       "raw_status": "OK",
       "previous_status": "OK",
       "fresh": true,
-      "last_success_at": "2026-09-04T05:01:19Z",
+      "last_success_at": "2026-09-04T09:53:59Z",
       "last_observation": "OK",
       "last_error": null
     },
@@ -97,7 +77,7 @@
       "raw_status": "OK",
       "previous_status": "OK",
       "fresh": true,
-      "last_success_at": "2026-09-04T05:01:19Z",
+      "last_success_at": "2026-09-04T09:53:59Z",
       "last_observation": "OK",
       "last_error": null
     },
@@ -111,7 +91,7 @@
       "raw_status": "OK",
       "previous_status": "OK",
       "fresh": true,
-      "last_success_at": "2026-09-04T05:01:19Z",
+      "last_success_at": "2026-09-04T09:53:59Z",
       "last_observation": "OK",
       "last_error": null
     },
@@ -125,7 +105,7 @@
       "raw_status": "OK",
       "previous_status": "OK",
       "fresh": true,
-      "last_success_at": "2026-09-04T05:01:19Z",
+      "last_success_at": "2026-09-04T09:53:59Z",
       "last_observation": "OK",
       "last_error": null
     },
@@ -137,9 +117,9 @@
       "address": "825 Don Mills Rd, Toronto, ON",
       "status": "OK",
       "raw_status": "OK",
-      "previous_status": "LOW",
+      "previous_status": "OK",
       "fresh": true,
-      "last_success_at": "2026-09-04T05:01:19Z",
+      "last_success_at": "2026-09-04T09:53:59Z",
       "last_observation": "OK",
       "last_error": null
     },
@@ -153,7 +133,7 @@
       "raw_status": "OK",
       "previous_status": "OK",
       "fresh": true,
-      "last_success_at": "2026-09-04T05:01:19Z",
+      "last_success_at": "2026-09-04T09:53:59Z",
       "last_observation": "OK",
       "last_error": null
     },
@@ -167,7 +147,7 @@
       "raw_status": "OK",
       "previous_status": "OK",
       "fresh": true,
-      "last_success_at": "2026-09-04T05:01:19Z",
+      "last_success_at": "2026-09-04T09:53:59Z",
       "last_observation": "OK",
       "last_error": null
     },
@@ -195,7 +175,7 @@
       "raw_status": "OK",
       "previous_status": "OK",
       "fresh": true,
-      "last_success_at": "2026-09-04T05:01:19Z",
+      "last_success_at": "2026-09-04T09:53:59Z",
       "last_observation": "OK",
       "last_error": null
     },
@@ -209,7 +189,7 @@
       "raw_status": "OK",
       "previous_status": "OK",
       "fresh": true,
-      "last_success_at": "2026-09-04T05:01:19Z",
+      "last_success_at": "2026-09-04T09:53:59Z",
       "last_observation": "OK",
       "last_error": null
     },
@@ -223,7 +203,7 @@
       "raw_status": "OK",
       "previous_status": "OK",
       "fresh": true,
-      "last_success_at": "2026-09-04T05:01:19Z",
+      "last_success_at": "2026-09-04T09:53:59Z",
       "last_observation": "OK",
       "last_error": null
     },
@@ -237,7 +217,7 @@
       "raw_status": "OK",
       "previous_status": "OK",
       "fresh": true,
-      "last_success_at": "2026-09-04T05:01:19Z",
+      "last_success_at": "2026-09-04T09:53:59Z",
       "last_observation": "OK",
       "last_error": null
     },
@@ -251,7 +231,7 @@
       "raw_status": "OK",
       "previous_status": "OK",
       "fresh": true,
-      "last_success_at": "2026-09-04T05:01:19Z",
+      "last_success_at": "2026-09-04T09:53:59Z",
       "last_observation": "OK",
       "last_error": null
     },
@@ -265,7 +245,7 @@
       "raw_status": "OK",
       "previous_status": "OK",
       "fresh": true,
-      "last_success_at": "2026-09-04T05:01:19Z",
+      "last_success_at": "2026-09-04T09:53:59Z",
       "last_observation": "OK",
       "last_error": null
     }
