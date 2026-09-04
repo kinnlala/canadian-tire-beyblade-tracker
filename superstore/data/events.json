@@ -21,6 +21,27 @@
           "current": "OK"
         }
       ]
+    },
+    {
+      "event_id": "20260904T050119Z-1dda0d4d82",
+      "checked_at": "2026-09-04T05:01:19Z",
+      "product": {
+        "name": "Beyblade X Starter Pack Set Assortment",
+        "code": "21595715_EA",
+        "search_term": "Beyblade X Starter Pack",
+        "banner": "superstore"
+      },
+      "changes": [
+        {
+          "store_id": "1077",
+          "store_name": "Don Mills & Eglinton",
+          "area": "Toronto",
+          "region": "Toronto",
+          "address": "825 Don Mills Rd, Toronto, ON",
+          "previous": "LOW",
+          "current": "OK"
+        }
+      ]
     }
   ]
 }
