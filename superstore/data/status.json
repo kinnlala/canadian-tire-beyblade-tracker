@@ -6,9 +6,9 @@
     "search_term": "Beyblade X Starter Pack",
     "banner": "superstore"
   },
-  "checked_at": "2026-09-05T13:59:05Z",
+  "checked_at": "2026-09-05T16:55:09Z",
   "known_store_count": 16,
-  "fresh_store_count": 16,
+  "fresh_store_count": 0,
   "last_run_alert": null,
   "stores": {
     "1012": {
@@ -20,10 +20,10 @@
       "status": "OK",
       "raw_status": "OK",
       "previous_status": "OK",
-      "fresh": true,
+      "fresh": false,
       "last_success_at": "2026-09-05T13:59:05Z",
-      "last_observation": "OK",
-      "last_error": null
+      "last_observation": "ERROR",
+      "last_error": "PC ID token refresh failed. The refresh-token chain may have expired or the latest encrypted state may be missing. Re-run login_pcid.py and replace the PCEXPRESS_REFRESH_TOKEN secret. HTTP 403."
     },
     "1043": {
       "store_id": "1043",
@@ -34,10 +34,10 @@
       "status": "OK",
       "raw_status": "OK",
       "previous_status": "OK",
-      "fresh": true,
+      "fresh": false,
       "last_success_at": "2026-09-05T13:59:05Z",
-      "last_observation": "OK",
-      "last_error": null
+      "last_observation": "ERROR",
+      "last_error": "PC ID token refresh failed. The refresh-token chain may have expired or the latest encrypted state may be missing. Re-run login_pcid.py and replace the PCEXPRESS_REFRESH_TOKEN secret. HTTP 403."
     },
     "1058": {
       "store_id": "1058",
@@ -48,10 +48,10 @@
       "status": "OK",
       "raw_status": "OK",
       "previous_status": "OK",
-      "fresh": true,
+      "fresh": false,
       "last_success_at": "2026-09-05T13:59:05Z",
-      "last_observation": "OK",
-      "last_error": null
+      "last_observation": "ERROR",
+      "last_error": "PC ID token refresh failed. The refresh-token chain may have expired or the latest encrypted state may be missing. Re-run login_pcid.py and replace the PCEXPRESS_REFRESH_TOKEN secret. HTTP 403."
     },
     "2842": {
       "store_id": "2842",
@@ -62,10 +62,10 @@
       "status": "OK",
       "raw_status": "OK",
       "previous_status": "OK",
-      "fresh": true,
+      "fresh": false,
       "last_success_at": "2026-09-05T13:59:05Z",
-      "last_observation": "OK",
-      "last_error": null
+      "last_observation": "ERROR",
+      "last_error": "PC ID token refresh failed. The refresh-token chain may have expired or the latest encrypted state may be missing. Re-run login_pcid.py and replace the PCEXPRESS_REFRESH_TOKEN secret. HTTP 403."
     },
     "1018": {
       "store_id": "1018",
@@ -76,10 +76,10 @@
       "status": "OK",
       "raw_status": "OK",
       "previous_status": "OK",
-      "fresh": true,
+      "fresh": false,
       "last_success_at": "2026-09-05T13:59:05Z",
-      "last_observation": "OK",
-      "last_error": null
+      "last_observation": "ERROR",
+      "last_error": "PC ID token refresh failed. The refresh-token chain may have expired or the latest encrypted state may be missing. Re-run login_pcid.py and replace the PCEXPRESS_REFRESH_TOKEN secret. HTTP 403."
     },
     "1030": {
       "store_id": "1030",
@@ -90,10 +90,10 @@
       "status": "OK",
       "raw_status": "OK",
       "previous_status": "OK",
-      "fresh": true,
+      "fresh": false,
       "last_success_at": "2026-09-05T13:59:05Z",
-      "last_observation": "OK",
-      "last_error": null
+      "last_observation": "ERROR",
+      "last_error": "PC ID token refresh failed. The refresh-token chain may have expired or the latest encrypted state may be missing. Re-run login_pcid.py and replace the PCEXPRESS_REFRESH_TOKEN secret. HTTP 403."
     },
     "1033": {
       "store_id": "1033",
@@ -104,10 +104,10 @@
       "status": "OK",
       "raw_status": "OK",
       "previous_status": "OK",
-      "fresh": true,
+      "fresh": false,
       "last_success_at": "2026-09-05T13:59:05Z",
-      "last_observation": "OK",
-      "last_error": null
+      "last_observation": "ERROR",
+      "last_error": "PC ID token refresh failed. The refresh-token chain may have expired or the latest encrypted state may be missing. Re-run login_pcid.py and replace the PCEXPRESS_REFRESH_TOKEN secret. HTTP 403."
     },
     "1077": {
       "store_id": "1077",
@@ -118,10 +118,10 @@
       "status": "OK",
       "raw_status": "OK",
       "previous_status": "OK",
-      "fresh": true,
+      "fresh": false,
       "last_success_at": "2026-09-05T13:59:05Z",
-      "last_observation": "OK",
-      "last_error": null
+      "last_observation": "ERROR",
+      "last_error": "PC ID token refresh failed. The refresh-token chain may have expired or the latest encrypted state may be missing. Re-run login_pcid.py and replace the PCEXPRESS_REFRESH_TOKEN secret. HTTP 403."
     },
     "2800": {
       "store_id": "2800",
@@ -132,10 +132,10 @@
       "status": "OK",
       "raw_status": "OK",
       "previous_status": "OK",
-      "fresh": true,
+      "fresh": false,
       "last_success_at": "2026-09-05T13:59:05Z",
-      "last_observation": "OK",
-      "last_error": null
+      "last_observation": "ERROR",
+      "last_error": "PC ID token refresh failed. The refresh-token chain may have expired or the latest encrypted state may be missing. Re-run login_pcid.py and replace the PCEXPRESS_REFRESH_TOKEN secret. HTTP 403."
     },
     "2809": {
       "store_id": "2809",
@@ -146,10 +146,10 @@
       "status": "OK",
       "raw_status": "OK",
       "previous_status": "OK",
-      "fresh": true,
+      "fresh": false,
       "last_success_at": "2026-09-05T13:59:05Z",
-      "last_observation": "OK",
-      "last_error": null
+      "last_observation": "ERROR",
+      "last_error": "PC ID token refresh failed. The refresh-token chain may have expired or the latest encrypted state may be missing. Re-run login_pcid.py and replace the PCEXPRESS_REFRESH_TOKEN secret. HTTP 403."
     },
     "2801": {
       "store_id": "2801",
@@ -162,8 +162,8 @@
       "previous_status": null,
       "fresh": false,
       "last_success_at": null,
-      "last_observation": "NOT_RETURNED",
-      "last_error": null
+      "last_observation": "ERROR",
+      "last_error": "PC ID token refresh failed. The refresh-token chain may have expired or the latest encrypted state may be missing. Re-run login_pcid.py and replace the PCEXPRESS_REFRESH_TOKEN secret. HTTP 403."
     },
     "1080": {
       "store_id": "1080",
@@ -174,10 +174,10 @@
       "status": "OK",
       "raw_status": "OK",
       "previous_status": "OK",
-      "fresh": true,
+      "fresh": false,
       "last_success_at": "2026-09-05T13:59:05Z",
-      "last_observation": "OK",
-      "last_error": null
+      "last_observation": "ERROR",
+      "last_error": "PC ID token refresh failed. The refresh-token chain may have expired or the latest encrypted state may be missing. Re-run login_pcid.py and replace the PCEXPRESS_REFRESH_TOKEN secret. HTTP 403."
     },
     "2841": {
       "store_id": "2841",
@@ -188,10 +188,10 @@
       "status": "OK",
       "raw_status": "OK",
       "previous_status": "OK",
-      "fresh": true,
+      "fresh": false,
       "last_success_at": "2026-09-05T13:59:05Z",
-      "last_observation": "OK",
-      "last_error": null
+      "last_observation": "ERROR",
+      "last_error": "PC ID token refresh failed. The refresh-token chain may have expired or the latest encrypted state may be missing. Re-run login_pcid.py and replace the PCEXPRESS_REFRESH_TOKEN secret. HTTP 403."
     },
     "1024": {
       "store_id": "1024",
@@ -202,10 +202,10 @@
       "status": "OK",
       "raw_status": "OK",
       "previous_status": "OK",
-      "fresh": true,
+      "fresh": false,
       "last_success_at": "2026-09-05T13:59:05Z",
-      "last_observation": "OK",
-      "last_error": null
+      "last_observation": "ERROR",
+      "last_error": "PC ID token refresh failed. The refresh-token chain may have expired or the latest encrypted state may be missing. Re-run login_pcid.py and replace the PCEXPRESS_REFRESH_TOKEN secret. HTTP 403."
     },
     "2810": {
       "store_id": "2810",
@@ -216,10 +216,10 @@
       "status": "OK",
       "raw_status": "OK",
       "previous_status": "OK",
-      "fresh": true,
+      "fresh": false,
       "last_success_at": "2026-09-05T13:59:05Z",
-      "last_observation": "OK",
-      "last_error": null
+      "last_observation": "ERROR",
+      "last_error": "PC ID token refresh failed. The refresh-token chain may have expired or the latest encrypted state may be missing. Re-run login_pcid.py and replace the PCEXPRESS_REFRESH_TOKEN secret. HTTP 403."
     },
     "2811": {
       "store_id": "2811",
@@ -230,10 +230,10 @@
       "status": "OK",
       "raw_status": "OK",
       "previous_status": "OK",
-      "fresh": true,
+      "fresh": false,
       "last_success_at": "2026-09-05T13:59:05Z",
-      "last_observation": "OK",
-      "last_error": null
+      "last_observation": "ERROR",
+      "last_error": "PC ID token refresh failed. The refresh-token chain may have expired or the latest encrypted state may be missing. Re-run login_pcid.py and replace the PCEXPRESS_REFRESH_TOKEN secret. HTTP 403."
     },
     "2831": {
       "store_id": "2831",
@@ -244,13 +244,29 @@
       "status": "OK",
       "raw_status": "OK",
       "previous_status": "OK",
-      "fresh": true,
+      "fresh": false,
       "last_success_at": "2026-09-05T13:59:05Z",
-      "last_observation": "OK",
-      "last_error": null
+      "last_observation": "ERROR",
+      "last_error": "PC ID token refresh failed. The refresh-token chain may have expired or the latest encrypted state may be missing. Re-run login_pcid.py and replace the PCEXPRESS_REFRESH_TOKEN secret. HTTP 403."
     }
   },
   "errors": {
-    "2801": "Product not returned by successful search"
+    "1012": "PC ID token refresh failed. The refresh-token chain may have expired or the latest encrypted state may be missing. Re-run login_pcid.py and replace the PCEXPRESS_REFRESH_TOKEN secret. HTTP 403.",
+    "1043": "PC ID token refresh failed. The refresh-token chain may have expired or the latest encrypted state may be missing. Re-run login_pcid.py and replace the PCEXPRESS_REFRESH_TOKEN secret. HTTP 403.",
+    "1058": "PC ID token refresh failed. The refresh-token chain may have expired or the latest encrypted state may be missing. Re-run login_pcid.py and replace the PCEXPRESS_REFRESH_TOKEN secret. HTTP 403.",
+    "2842": "PC ID token refresh failed. The refresh-token chain may have expired or the latest encrypted state may be missing. Re-run login_pcid.py and replace the PCEXPRESS_REFRESH_TOKEN secret. HTTP 403.",
+    "1018": "PC ID token refresh failed. The refresh-token chain may have expired or the latest encrypted state may be missing. Re-run login_pcid.py and replace the PCEXPRESS_REFRESH_TOKEN secret. HTTP 403.",
+    "1030": "PC ID token refresh failed. The refresh-token chain may have expired or the latest encrypted state may be missing. Re-run login_pcid.py and replace the PCEXPRESS_REFRESH_TOKEN secret. HTTP 403.",
+    "1033": "PC ID token refresh failed. The refresh-token chain may have expired or the latest encrypted state may be missing. Re-run login_pcid.py and replace the PCEXPRESS_REFRESH_TOKEN secret. HTTP 403.",
+    "1077": "PC ID token refresh failed. The refresh-token chain may have expired or the latest encrypted state may be missing. Re-run login_pcid.py and replace the PCEXPRESS_REFRESH_TOKEN secret. HTTP 403.",
+    "2800": "PC ID token refresh failed. The refresh-token chain may have expired or the latest encrypted state may be missing. Re-run login_pcid.py and replace the PCEXPRESS_REFRESH_TOKEN secret. HTTP 403.",
+    "2809": "PC ID token refresh failed. The refresh-token chain may have expired or the latest encrypted state may be missing. Re-run login_pcid.py and replace the PCEXPRESS_REFRESH_TOKEN secret. HTTP 403.",
+    "2801": "PC ID token refresh failed. The refresh-token chain may have expired or the latest encrypted state may be missing. Re-run login_pcid.py and replace the PCEXPRESS_REFRESH_TOKEN secret. HTTP 403.",
+    "1080": "PC ID token refresh failed. The refresh-token chain may have expired or the latest encrypted state may be missing. Re-run login_pcid.py and replace the PCEXPRESS_REFRESH_TOKEN secret. HTTP 403.",
+    "2841": "PC ID token refresh failed. The refresh-token chain may have expired or the latest encrypted state may be missing. Re-run login_pcid.py and replace the PCEXPRESS_REFRESH_TOKEN secret. HTTP 403.",
+    "1024": "PC ID token refresh failed. The refresh-token chain may have expired or the latest encrypted state may be missing. Re-run login_pcid.py and replace the PCEXPRESS_REFRESH_TOKEN secret. HTTP 403.",
+    "2810": "PC ID token refresh failed. The refresh-token chain may have expired or the latest encrypted state may be missing. Re-run login_pcid.py and replace the PCEXPRESS_REFRESH_TOKEN secret. HTTP 403.",
+    "2811": "PC ID token refresh failed. The refresh-token chain may have expired or the latest encrypted state may be missing. Re-run login_pcid.py and replace the PCEXPRESS_REFRESH_TOKEN secret. HTTP 403.",
+    "2831": "PC ID token refresh failed. The refresh-token chain may have expired or the latest encrypted state may be missing. Re-run login_pcid.py and replace the PCEXPRESS_REFRESH_TOKEN secret. HTTP 403."
   }
 }
