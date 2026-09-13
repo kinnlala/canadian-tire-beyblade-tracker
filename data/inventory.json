@@ -4,19 +4,19 @@
   "canadian_tire_item": "150-1281-6",
   "product": "BeyBlade X Starter Pack",
   "source": "Canadian Tire PriceAvailability API",
-  "checked_at": "2026-09-13T16:16:11Z",
+  "checked_at": "2026-09-13T18:49:02Z",
   "baseline_complete": true,
   "fresh_store_count": 0,
   "known_store_count": 60,
   "last_run_alert": null,
   "errors": {
-    "Durham": "Durham: all Canadian Tire API requests failed (0187: store 0187: HTTP Error 403: Forbidden; 0336: store 0336: HTTP Error 403: Forbidden; 0075: store 0075: HTTP Error 403: Forbidden; 0460: store 0460: HTTP Error 403: Forbidden; 0160: store 0160: HTTP Error 403: Forbidden)",
-    "York Region": "York Region: all Canadian Tire API requests failed (0697: store 0697: HTTP Error 403: Forbidden; 0087: store 0087: HTTP Error 403: Forbidden; 0164: store 0164: HTTP Error 403: Forbidden; 0399: store 0399: HTTP Error 403: Forbidden; 0653: store 0653: HTTP Error 403: Forbidden)",
-    "Toronto West + Central": "Toronto West + Central: all Canadian Tire API requests failed (0126: store 0126: HTTP Error 403: Forbidden; 0070: store 0070: HTTP Error 403: Forbidden; 0019: store 0019: HTTP Error 403: Forbidden; 0119: store 0119: HTTP Error 403: Forbidden; 0182: store 0182: HTTP Error 403: Forbidden)",
-    "Toronto East + North": "Toronto East + North: all Canadian Tire API requests failed (0192: store 0192: HTTP Error 403: Forbidden; 0175: store 0175: HTTP Error 403: Forbidden; 0030: store 0030: HTTP Error 403: Forbidden; 0209: store 0209: HTTP Error 403: Forbidden; 0427: store 0427: HTTP Error 403: Forbidden)",
-    "Peel Region": "Peel Region: all Canadian Tire API requests failed (0169: store 0169: HTTP Error 403: Forbidden; 0010: store 0010: HTTP Error 403: Forbidden; 0152: store 0152: HTTP Error 403: Forbidden; 0197: store 0197: HTTP Error 403: Forbidden; 0305: store 0305: HTTP Error 403: Forbidden)",
-    "Halton Region": "Halton Region: all Canadian Tire API requests failed (0140: store 0140: HTTP Error 403: Forbidden; 0122: store 0122: HTTP Error 403: Forbidden; 0143: store 0143: HTTP Error 403: Forbidden; 0159: store 0159: HTTP Error 403: Forbidden; 0424: store 0424: HTTP Error 403: Forbidden)",
-    "Peterborough + Barrie": "Peterborough + Barrie: all Canadian Tire API requests failed (0444: store 0444: HTTP Error 403: Forbidden; 0006: store 0006: HTTP Error 403: Forbidden; 0081: store 0081: HTTP Error 403: Forbidden; 0660: store 0660: HTTP Error 403: Forbidden)"
+    "Durham": "Durham: all Canadian Tire API requests failed (0187: store 0187: HTTP Error 403: Forbidden; 0075: store 0075: HTTP Error 403: Forbidden; 0336: store 0336: HTTP Error 403: Forbidden; 0460: store 0460: HTTP Error 403: Forbidden; 0160: store 0160: HTTP Error 403: Forbidden)",
+    "York Region": "York Region: all Canadian Tire API requests failed (0697: store 0697: HTTP Error 403: Forbidden; 0087: store 0087: HTTP Error 403: Forbidden; 0399: store 0399: HTTP Error 403: Forbidden; 0164: store 0164: HTTP Error 403: Forbidden; 0189: store 0189: HTTP Error 403: Forbidden)",
+    "Toronto West + Central": "Toronto West + Central: all Canadian Tire API requests failed (0019: store 0019: HTTP Error 403: Forbidden; 0070: store 0070: HTTP Error 403: Forbidden; 0126: store 0126: HTTP Error 403: Forbidden; 0119: store 0119: HTTP Error 403: Forbidden; 0150: store 0150: HTTP Error 403: Forbidden)",
+    "Toronto East + North": "Toronto East + North: all Canadian Tire API requests failed (0030: store 0030: HTTP Error 403: Forbidden; 0192: store 0192: HTTP Error 403: Forbidden; 0209: store 0209: HTTP Error 403: Forbidden; 0175: store 0175: HTTP Error 403: Forbidden; 0273: store 0273: HTTP Error 403: Forbidden)",
+    "Peel Region": "Peel Region: all Canadian Tire API requests failed (0169: store 0169: HTTP Error 403: Forbidden; 0010: store 0010: HTTP Error 403: Forbidden; 0197: store 0197: HTTP Error 403: Forbidden; 0152: store 0152: HTTP Error 403: Forbidden; 0305: store 0305: HTTP Error 403: Forbidden)",
+    "Halton Region": "Halton Region: all Canadian Tire API requests failed (0143: store 0143: HTTP Error 403: Forbidden; 0159: store 0159: HTTP Error 403: Forbidden; 0140: store 0140: HTTP Error 403: Forbidden; 0122: store 0122: HTTP Error 403: Forbidden; 0424: store 0424: HTTP Error 403: Forbidden)",
+    "Peterborough + Barrie": "Peterborough + Barrie: all Canadian Tire API requests failed (0660: store 0660: HTTP Error 403: Forbidden; 0444: store 0444: HTTP Error 403: Forbidden; 0081: store 0081: HTTP Error 403: Forbidden; 0006: store 0006: HTTP Error 403: Forbidden)"
   },
   "stores": {
     "0187": {
