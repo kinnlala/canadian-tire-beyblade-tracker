@@ -1,4 +1,41 @@
 {
   "schema_version": 1,
-  "events": []
+  "events": [
+    {
+      "event_id": "20260921T170254Z-014531e56f",
+      "checked_at": "2026-09-21T17:02:54Z",
+      "sku": "1501281",
+      "canadian_tire_item": "150-1281-6",
+      "product": "BeyBlade X Starter Pack",
+      "changes": [
+        {
+          "store_id": "0069",
+          "store_name": "Newmarket",
+          "area": "Newmarket",
+          "region": "York Region",
+          "previous": 2,
+          "current": 10,
+          "delta": 8
+        },
+        {
+          "store_id": "0280",
+          "store_name": "Stouffville",
+          "area": "Stouffville",
+          "region": "York Region",
+          "previous": 0,
+          "current": 8,
+          "delta": 8
+        },
+        {
+          "store_id": "0427",
+          "store_name": "Scarborough East (Rylander)",
+          "area": "Scarborough",
+          "region": "Toronto",
+          "previous": 0,
+          "current": 8,
+          "delta": 8
+        }
+      ]
+    }
+  ]
 }
