@@ -36,6 +36,24 @@
           "delta": 8
         }
       ]
+    },
+    {
+      "event_id": "20260921T210354Z-05f4656ce4",
+      "checked_at": "2026-09-21T21:03:54Z",
+      "sku": "1501281",
+      "canadian_tire_item": "150-1281-6",
+      "product": "BeyBlade X Starter Pack",
+      "changes": [
+        {
+          "store_id": "0087",
+          "store_name": "Richmond Hill",
+          "area": "Richmond Hill",
+          "region": "York Region",
+          "previous": 0,
+          "current": 4,
+          "delta": 4
+        }
+      ]
     }
   ]
 }
