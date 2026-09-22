@@ -126,6 +126,24 @@
           "delta": 8
         }
       ]
+    },
+    {
+      "event_id": "20260922T220842Z-cf661f730f",
+      "checked_at": "2026-09-22T22:08:42Z",
+      "sku": "1501281",
+      "canadian_tire_item": "150-1281-6",
+      "product": "BeyBlade X Starter Pack",
+      "changes": [
+        {
+          "store_id": "0175",
+          "store_name": "Cedarbrae",
+          "area": "Scarborough",
+          "region": "Toronto",
+          "previous": 0,
+          "current": 6,
+          "delta": 6
+        }
+      ]
     }
   ]
 }
