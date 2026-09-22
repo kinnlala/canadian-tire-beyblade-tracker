@@ -72,6 +72,42 @@
           "delta": 3
         }
       ]
+    },
+    {
+      "event_id": "20260922T145311Z-fa5a37a229",
+      "checked_at": "2026-09-22T14:53:11Z",
+      "sku": "1501281",
+      "canadian_tire_item": "150-1281-6",
+      "product": "BeyBlade X Starter Pack",
+      "changes": [
+        {
+          "store_id": "0127",
+          "store_name": "Uxbridge",
+          "area": "Uxbridge",
+          "region": "Durham",
+          "previous": 0,
+          "current": 6,
+          "delta": 6
+        },
+        {
+          "store_id": "0226",
+          "store_name": "Port Perry",
+          "area": "Port Perry",
+          "region": "Durham",
+          "previous": 0,
+          "current": 4,
+          "delta": 4
+        },
+        {
+          "store_id": "0660",
+          "store_name": "Peterborough North",
+          "area": "Peterborough",
+          "region": "Peterborough",
+          "previous": 0,
+          "current": 8,
+          "delta": 8
+        }
+      ]
     }
   ]
 }
