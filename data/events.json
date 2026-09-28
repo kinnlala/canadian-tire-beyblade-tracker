@@ -270,6 +270,78 @@
           "delta": 38
         }
       ]
+    },
+    {
+      "event_id": "20260928T220007Z-c673f07189",
+      "checked_at": "2026-09-28T22:00:07Z",
+      "sku": "1501281",
+      "canadian_tire_item": "150-1281-6",
+      "product": "BeyBlade X Starter Pack",
+      "changes": [
+        {
+          "store_id": "0127",
+          "store_name": "Uxbridge",
+          "area": "Uxbridge",
+          "region": "Durham",
+          "previous": 4,
+          "current": 12,
+          "delta": 8
+        },
+        {
+          "store_id": "0697",
+          "store_name": "Richmond Hill North",
+          "area": "Richmond Hill",
+          "region": "York Region",
+          "previous": 0,
+          "current": 4,
+          "delta": 4
+        },
+        {
+          "store_id": "0280",
+          "store_name": "Stouffville",
+          "area": "Stouffville",
+          "region": "York Region",
+          "previous": 5,
+          "current": 15,
+          "delta": 10
+        },
+        {
+          "store_id": "0214",
+          "store_name": "Eglinton & Caledonia",
+          "area": "Toronto",
+          "region": "Toronto",
+          "previous": 0,
+          "current": 6,
+          "delta": 6
+        },
+        {
+          "store_id": "0273",
+          "store_name": "Main & Danforth",
+          "area": "Toronto",
+          "region": "Toronto",
+          "previous": 8,
+          "current": 14,
+          "delta": 6
+        },
+        {
+          "store_id": "0427",
+          "store_name": "Scarborough East (Rylander)",
+          "area": "Scarborough",
+          "region": "Toronto",
+          "previous": 6,
+          "current": 14,
+          "delta": 8
+        },
+        {
+          "store_id": "0675",
+          "store_name": "McLaughlin Road",
+          "area": "Brampton",
+          "region": "Peel Region",
+          "previous": 0,
+          "current": 22,
+          "delta": 22
+        }
+      ]
     }
   ]
 }
