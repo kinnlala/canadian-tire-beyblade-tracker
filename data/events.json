@@ -432,6 +432,60 @@
           "delta": 12
         }
       ]
+    },
+    {
+      "event_id": "20260929T204624Z-a5f27a9369",
+      "checked_at": "2026-09-29T20:46:24Z",
+      "sku": "1501281",
+      "canadian_tire_item": "150-1281-6",
+      "product": "BeyBlade X Starter Pack",
+      "changes": [
+        {
+          "store_id": "0164",
+          "store_name": "Markham",
+          "area": "Markham",
+          "region": "York Region",
+          "previous": 0,
+          "current": 4,
+          "delta": 4
+        },
+        {
+          "store_id": "0321",
+          "store_name": "Dufferin & 407 (Thornhill)",
+          "area": "Thornhill",
+          "region": "York Region",
+          "previous": 1,
+          "current": 17,
+          "delta": 16
+        },
+        {
+          "store_id": "0459",
+          "store_name": "Eglinton & Laird",
+          "area": "Toronto",
+          "region": "Toronto",
+          "previous": 0,
+          "current": 4,
+          "delta": 4
+        },
+        {
+          "store_id": "0169",
+          "store_name": "Meadowvale",
+          "area": "Mississauga",
+          "region": "Peel Region",
+          "previous": 0,
+          "current": 8,
+          "delta": 8
+        },
+        {
+          "store_id": "0497",
+          "store_name": "Heartland",
+          "area": "Mississauga",
+          "region": "Peel Region",
+          "previous": 0,
+          "current": 14,
+          "delta": 14
+        }
+      ]
     }
   ]
 }
