@@ -342,6 +342,96 @@
           "delta": 22
         }
       ]
+    },
+    {
+      "event_id": "20260929T155059Z-3bcbb57dd3",
+      "checked_at": "2026-09-29T15:50:59Z",
+      "sku": "1501281",
+      "canadian_tire_item": "150-1281-6",
+      "product": "BeyBlade X Starter Pack",
+      "changes": [
+        {
+          "store_id": "0460",
+          "store_name": "Whitby North",
+          "area": "Whitby",
+          "region": "Durham",
+          "previous": 0,
+          "current": 6,
+          "delta": 6
+        },
+        {
+          "store_id": "0160",
+          "store_name": "Ajax",
+          "area": "Ajax",
+          "region": "Durham",
+          "previous": 0,
+          "current": 30,
+          "delta": 30
+        },
+        {
+          "store_id": "0399",
+          "store_name": "Markham East",
+          "area": "Markham",
+          "region": "York Region",
+          "previous": 0,
+          "current": 14,
+          "delta": 14
+        },
+        {
+          "store_id": "0175",
+          "store_name": "Cedarbrae",
+          "area": "Scarborough",
+          "region": "Toronto",
+          "previous": 6,
+          "current": 10,
+          "delta": 4
+        },
+        {
+          "store_id": "0600",
+          "store_name": "Toronto Eaton Centre",
+          "area": "Toronto",
+          "region": "Toronto",
+          "previous": 0,
+          "current": 334,
+          "delta": 334
+        },
+        {
+          "store_id": "0010",
+          "store_name": "Brampton Shoppers World",
+          "area": "Brampton",
+          "region": "Peel Region",
+          "previous": 0,
+          "current": 14,
+          "delta": 14
+        },
+        {
+          "store_id": "0140",
+          "store_name": "Milton",
+          "area": "Milton",
+          "region": "Halton Region",
+          "previous": 0,
+          "current": 28,
+          "delta": 28
+        },
+        {
+          "store_id": "0143",
+          "store_name": "Oakville",
+          "area": "Oakville",
+          "region": "Halton Region",
+          "previous": 0,
+          "current": 24,
+          "delta": 24
+        },
+        {
+          "store_id": "0660",
+          "store_name": "Peterborough North",
+          "area": "Peterborough",
+          "region": "Peterborough",
+          "previous": 8,
+          "current": 20,
+          "delta": 12
+        }
+      ]
     }
   ]
 }
