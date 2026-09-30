@@ -558,6 +558,24 @@
           "delta": 4
         }
       ]
+    },
+    {
+      "event_id": "20260930T191910Z-961280a090",
+      "checked_at": "2026-09-30T19:19:10Z",
+      "sku": "1501281",
+      "canadian_tire_item": "150-1281-6",
+      "product": "BeyBlade X Starter Pack",
+      "changes": [
+        {
+          "store_id": "0152",
+          "store_name": "Dixie & Dundas",
+          "area": "Mississauga",
+          "region": "Peel Region",
+          "previous": 0,
+          "current": 4,
+          "delta": 4
+        }
+      ]
     }
   ]
 }
