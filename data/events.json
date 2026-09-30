@@ -522,6 +522,42 @@
           "delta": 32
         }
       ]
+    },
+    {
+      "event_id": "20260930T134242Z-7a9aefd17b",
+      "checked_at": "2026-09-30T13:42:42Z",
+      "sku": "1501281",
+      "canadian_tire_item": "150-1281-6",
+      "product": "BeyBlade X Starter Pack",
+      "changes": [
+        {
+          "store_id": "0653",
+          "store_name": "Maple (Vaughan)",
+          "area": "Vaughan",
+          "region": "York Region",
+          "previous": 0,
+          "current": 8,
+          "delta": 8
+        },
+        {
+          "store_id": "0126",
+          "store_name": "Yonge & Steeles",
+          "area": "North York",
+          "region": "Toronto",
+          "previous": 0,
+          "current": 8,
+          "delta": 8
+        },
+        {
+          "store_id": "0143",
+          "store_name": "Oakville",
+          "area": "Oakville",
+          "region": "Halton Region",
+          "previous": 24,
+          "current": 28,
+          "delta": 4
+        }
+      ]
     }
   ]
 }
