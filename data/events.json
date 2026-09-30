@@ -504,6 +504,24 @@
           "delta": 8
         }
       ]
+    },
+    {
+      "event_id": "20260930T064238Z-0ffebcd746",
+      "checked_at": "2026-09-30T06:42:38Z",
+      "sku": "1501281",
+      "canadian_tire_item": "150-1281-6",
+      "product": "BeyBlade X Starter Pack",
+      "changes": [
+        {
+          "store_id": "0150",
+          "store_name": "Yonge & Church",
+          "area": "Toronto",
+          "region": "Toronto",
+          "previous": 0,
+          "current": 32,
+          "delta": 32
+        }
+      ]
     }
   ]
 }
