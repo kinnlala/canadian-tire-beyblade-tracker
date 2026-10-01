@@ -612,6 +612,33 @@
           "delta": 4
         }
       ]
+    },
+    {
+      "event_id": "20261001T231200Z-744e67fe9c",
+      "checked_at": "2026-10-01T23:12:00Z",
+      "sku": "1501281",
+      "canadian_tire_item": "150-1281-6",
+      "product": "BeyBlade X Starter Pack",
+      "changes": [
+        {
+          "store_id": "0654",
+          "store_name": "Leslie & Lake Shore",
+          "area": "Toronto",
+          "region": "Toronto",
+          "previous": 4,
+          "current": 12,
+          "delta": 8
+        },
+        {
+          "store_id": "0412",
+          "store_name": "Burlington North",
+          "area": "Burlington",
+          "region": "Halton Region",
+          "previous": 0,
+          "current": 6,
+          "delta": 6
+        }
+      ]
     }
   ]
 }
