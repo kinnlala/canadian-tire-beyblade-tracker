@@ -702,6 +702,24 @@
           "delta": 78
         }
       ]
+    },
+    {
+      "event_id": "20261002T204414Z-261ee5914b",
+      "checked_at": "2026-10-02T20:44:14Z",
+      "sku": "1501281",
+      "canadian_tire_item": "150-1281-6",
+      "product": "BeyBlade X Starter Pack",
+      "changes": [
+        {
+          "store_id": "0030",
+          "store_name": "Warden & Eglinton",
+          "area": "Scarborough",
+          "region": "Toronto",
+          "previous": 11,
+          "current": 16,
+          "delta": 5
+        }
+      ]
     }
   ]
 }
