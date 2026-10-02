@@ -657,6 +657,51 @@
           "delta": 288
         }
       ]
+    },
+    {
+      "event_id": "20261002T154829Z-deb73aedca",
+      "checked_at": "2026-10-02T15:48:29Z",
+      "sku": "1501281",
+      "canadian_tire_item": "150-1281-6",
+      "product": "BeyBlade X Starter Pack",
+      "changes": [
+        {
+          "store_id": "0070",
+          "store_name": "The Queensway",
+          "area": "Etobicoke",
+          "region": "Toronto",
+          "previous": 0,
+          "current": 16,
+          "delta": 16
+        },
+        {
+          "store_id": "0119",
+          "store_name": "Islington & 401",
+          "area": "Etobicoke",
+          "region": "Toronto",
+          "previous": 0,
+          "current": 12,
+          "delta": 12
+        },
+        {
+          "store_id": "0346",
+          "store_name": "Mavis & Dundas",
+          "area": "Mississauga",
+          "region": "Peel Region",
+          "previous": 1,
+          "current": 11,
+          "delta": 10
+        },
+        {
+          "store_id": "0429",
+          "store_name": "Oakville North",
+          "area": "Oakville",
+          "region": "Halton Region",
+          "previous": 0,
+          "current": 78,
+          "delta": 78
+        }
+      ]
     }
   ]
 }
