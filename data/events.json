@@ -720,6 +720,42 @@
           "delta": 5
         }
       ]
+    },
+    {
+      "event_id": "20261005T182708Z-3d4b50736c",
+      "checked_at": "2026-10-05T18:27:08Z",
+      "sku": "1501281",
+      "canadian_tire_item": "150-1281-6",
+      "product": "BeyBlade X Starter Pack",
+      "changes": [
+        {
+          "store_id": "0069",
+          "store_name": "Newmarket",
+          "area": "Newmarket",
+          "region": "York Region",
+          "previous": 14,
+          "current": 20,
+          "delta": 6
+        },
+        {
+          "store_id": "0294",
+          "store_name": "Albion & Kipling",
+          "area": "Etobicoke",
+          "region": "Toronto",
+          "previous": 0,
+          "current": 22,
+          "delta": 22
+        },
+        {
+          "store_id": "0159",
+          "store_name": "Georgetown",
+          "area": "Halton Hills / Georgetown",
+          "region": "Halton Region",
+          "previous": 0,
+          "current": 8,
+          "delta": 8
+        }
+      ]
     }
   ]
 }
