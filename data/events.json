@@ -792,6 +792,24 @@
           "delta": 8
         }
       ]
+    },
+    {
+      "event_id": "20261006T201926Z-b0599d3d1b",
+      "checked_at": "2026-10-06T20:19:26Z",
+      "sku": "1501281",
+      "canadian_tire_item": "150-1281-6",
+      "product": "BeyBlade X Starter Pack",
+      "changes": [
+        {
+          "store_id": "0273",
+          "store_name": "Main & Danforth",
+          "area": "Toronto",
+          "region": "Toronto",
+          "previous": 14,
+          "current": 22,
+          "delta": 8
+        }
+      ]
     }
   ]
 }
