@@ -774,6 +774,24 @@
           "delta": 10
         }
       ]
+    },
+    {
+      "event_id": "20261006T151134Z-c57a2ce3a8",
+      "checked_at": "2026-10-06T15:11:34Z",
+      "sku": "1501281",
+      "canadian_tire_item": "150-1281-6",
+      "product": "BeyBlade X Starter Pack",
+      "changes": [
+        {
+          "store_id": "0197",
+          "store_name": "Bolton",
+          "area": "Caledon / Bolton",
+          "region": "Peel Region",
+          "previous": 0,
+          "current": 8,
+          "delta": 8
+        }
+      ]
     }
   ]
 }
