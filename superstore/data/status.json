@@ -6,9 +6,9 @@
     "search_term": "Beyblade X Starter Pack",
     "banner": "superstore"
   },
-  "checked_at": "2026-10-06T17:22:59Z",
+  "checked_at": "2026-10-06T21:51:50Z",
   "known_store_count": 16,
-  "fresh_store_count": 12,
+  "fresh_store_count": 15,
   "last_run_alert": null,
   "stores": {
     "1012": {
@@ -35,7 +35,7 @@
       "raw_status": "OK",
       "previous_status": "OK",
       "fresh": true,
-      "last_success_at": "2026-10-06T17:22:59Z",
+      "last_success_at": "2026-10-06T21:51:50Z",
       "last_observation": "OK",
       "last_error": null
     },
@@ -48,10 +48,10 @@
       "status": "OK",
       "raw_status": "OK",
       "previous_status": "OK",
-      "fresh": false,
-      "last_success_at": "2026-10-06T10:43:54Z",
-      "last_observation": "ERROR",
-      "last_error": "503 Server Error: Service Unavailable for url: https://api.pcexpress.ca/pcx-bff/api/v1/products/search"
+      "fresh": true,
+      "last_success_at": "2026-10-06T21:51:50Z",
+      "last_observation": "OK",
+      "last_error": null
     },
     "2842": {
       "store_id": "2842",
@@ -63,7 +63,7 @@
       "raw_status": "OK",
       "previous_status": "OK",
       "fresh": true,
-      "last_success_at": "2026-10-06T17:22:59Z",
+      "last_success_at": "2026-10-06T21:51:50Z",
       "last_observation": "OK",
       "last_error": null
     },
@@ -76,10 +76,10 @@
       "status": "OK",
       "raw_status": "OK",
       "previous_status": "OK",
-      "fresh": false,
-      "last_success_at": "2026-10-06T10:43:54Z",
-      "last_observation": "ERROR",
-      "last_error": "503 Server Error: Service Unavailable for url: https://api.pcexpress.ca/pcx-bff/api/v1/products/search"
+      "fresh": true,
+      "last_success_at": "2026-10-06T21:51:50Z",
+      "last_observation": "OK",
+      "last_error": null
     },
     "1030": {
       "store_id": "1030",
@@ -91,7 +91,7 @@
       "raw_status": "OK",
       "previous_status": "OK",
       "fresh": true,
-      "last_success_at": "2026-10-06T17:22:59Z",
+      "last_success_at": "2026-10-06T21:51:50Z",
       "last_observation": "OK",
       "last_error": null
     },
@@ -105,7 +105,7 @@
       "raw_status": "OK",
       "previous_status": "OK",
       "fresh": true,
-      "last_success_at": "2026-10-06T17:22:59Z",
+      "last_success_at": "2026-10-06T21:51:50Z",
       "last_observation": "OK",
       "last_error": null
     },
@@ -118,10 +118,10 @@
       "status": "OK",
       "raw_status": "OK",
       "previous_status": "OK",
-      "fresh": false,
-      "last_success_at": "2026-10-06T10:43:54Z",
-      "last_observation": "ERROR",
-      "last_error": "503 Server Error: Service Unavailable for url: https://api.pcexpress.ca/pcx-bff/api/v1/products/search"
+      "fresh": true,
+      "last_success_at": "2026-10-06T21:51:50Z",
+      "last_observation": "OK",
+      "last_error": null
     },
     "2800": {
       "store_id": "2800",
@@ -133,7 +133,7 @@
       "raw_status": "OK",
       "previous_status": "OK",
       "fresh": true,
-      "last_success_at": "2026-10-06T17:22:59Z",
+      "last_success_at": "2026-10-06T21:51:50Z",
       "last_observation": "OK",
       "last_error": null
     },
@@ -147,7 +147,7 @@
       "raw_status": "OK",
       "previous_status": "OK",
       "fresh": true,
-      "last_success_at": "2026-10-06T17:22:59Z",
+      "last_success_at": "2026-10-06T21:51:50Z",
       "last_observation": "OK",
       "last_error": null
     },
@@ -175,7 +175,7 @@
       "raw_status": "OK",
       "previous_status": "OK",
       "fresh": true,
-      "last_success_at": "2026-10-06T17:22:59Z",
+      "last_success_at": "2026-10-06T21:51:50Z",
       "last_observation": "OK",
       "last_error": null
     },
@@ -189,7 +189,7 @@
       "raw_status": "OK",
       "previous_status": "OK",
       "fresh": true,
-      "last_success_at": "2026-10-06T17:22:59Z",
+      "last_success_at": "2026-10-06T21:51:50Z",
       "last_observation": "OK",
       "last_error": null
     },
@@ -203,7 +203,7 @@
       "raw_status": "OK",
       "previous_status": "OK",
       "fresh": true,
-      "last_success_at": "2026-10-06T17:22:59Z",
+      "last_success_at": "2026-10-06T21:51:50Z",
       "last_observation": "OK",
       "last_error": null
     },
@@ -217,7 +217,7 @@
       "raw_status": "OK",
       "previous_status": "OK",
       "fresh": true,
-      "last_success_at": "2026-10-06T17:22:59Z",
+      "last_success_at": "2026-10-06T21:51:50Z",
       "last_observation": "OK",
       "last_error": null
     },
@@ -231,7 +231,7 @@
       "raw_status": "OK",
       "previous_status": "OK",
       "fresh": true,
-      "last_success_at": "2026-10-06T17:22:59Z",
+      "last_success_at": "2026-10-06T21:51:50Z",
       "last_observation": "OK",
       "last_error": null
     },
@@ -245,16 +245,13 @@
       "raw_status": "OK",
       "previous_status": "OK",
       "fresh": true,
-      "last_success_at": "2026-10-06T17:22:59Z",
+      "last_success_at": "2026-10-06T21:51:50Z",
       "last_observation": "OK",
       "last_error": null
     }
   },
   "errors": {
     "1012": "Product not returned by successful search",
-    "1058": "503 Server Error: Service Unavailable for url: https://api.pcexpress.ca/pcx-bff/api/v1/products/search",
-    "1018": "503 Server Error: Service Unavailable for url: https://api.pcexpress.ca/pcx-bff/api/v1/products/search",
-    "1077": "503 Server Error: Service Unavailable for url: https://api.pcexpress.ca/pcx-bff/api/v1/products/search",
     "2801": "Product not returned by successful search"
   }
 }
