@@ -828,6 +828,51 @@
           "delta": 8
         }
       ]
+    },
+    {
+      "event_id": "20261007T203707Z-f2fcd1ef6e",
+      "checked_at": "2026-10-07T20:37:07Z",
+      "sku": "1501281",
+      "canadian_tire_item": "150-1281-6",
+      "product": "BeyBlade X Starter Pack",
+      "changes": [
+        {
+          "store_id": "0187",
+          "store_name": "Whitby South",
+          "area": "Whitby",
+          "region": "Durham",
+          "previous": 0,
+          "current": 4,
+          "delta": 4
+        },
+        {
+          "store_id": "0621",
+          "store_name": "Liberty Village",
+          "area": "Toronto",
+          "region": "Toronto",
+          "previous": 3,
+          "current": 11,
+          "delta": 8
+        },
+        {
+          "store_id": "0241",
+          "store_name": "Southdown",
+          "area": "Mississauga",
+          "region": "Peel Region",
+          "previous": 2,
+          "current": 10,
+          "delta": 8
+        },
+        {
+          "store_id": "0081",
+          "store_name": "Peterborough",
+          "area": "Peterborough",
+          "region": "Peterborough",
+          "previous": 0,
+          "current": 38,
+          "delta": 38
+        }
+      ]
     }
   ]
 }
