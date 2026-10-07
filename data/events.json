@@ -810,6 +810,24 @@
           "delta": 8
         }
       ]
+    },
+    {
+      "event_id": "20261007T143151Z-4d7ec748ec",
+      "checked_at": "2026-10-07T14:31:51Z",
+      "sku": "1501281",
+      "canadian_tire_item": "150-1281-6",
+      "product": "BeyBlade X Starter Pack",
+      "changes": [
+        {
+          "store_id": "0324",
+          "store_name": "Pickering",
+          "area": "Pickering",
+          "region": "Durham",
+          "previous": 0,
+          "current": 8,
+          "delta": 8
+        }
+      ]
     }
   ]
 }
