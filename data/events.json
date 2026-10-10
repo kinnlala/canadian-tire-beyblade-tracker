@@ -891,6 +891,24 @@
           "delta": 18
         }
       ]
+    },
+    {
+      "event_id": "20261010T134049Z-b05625e364",
+      "checked_at": "2026-10-10T13:40:49Z",
+      "sku": "1501281",
+      "canadian_tire_item": "150-1281-6",
+      "product": "BeyBlade X Starter Pack",
+      "changes": [
+        {
+          "store_id": "0122",
+          "store_name": "Burlington Fairview",
+          "area": "Burlington",
+          "region": "Halton Region",
+          "previous": 36,
+          "current": 68,
+          "delta": 32
+        }
+      ]
     }
   ]
 }
