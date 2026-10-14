@@ -990,6 +990,87 @@
           "delta": 8
         }
       ]
+    },
+    {
+      "event_id": "20261014T192256Z-405c5a69c5",
+      "checked_at": "2026-10-14T19:22:56Z",
+      "sku": "1501281",
+      "canadian_tire_item": "150-1281-6",
+      "product": "BeyBlade X Starter Pack",
+      "changes": [
+        {
+          "store_id": "0460",
+          "store_name": "Whitby North",
+          "area": "Whitby",
+          "region": "Durham",
+          "previous": 4,
+          "current": 14,
+          "delta": 10
+        },
+        {
+          "store_id": "0160",
+          "store_name": "Ajax",
+          "area": "Ajax",
+          "region": "Durham",
+          "previous": 29,
+          "current": 37,
+          "delta": 8
+        },
+        {
+          "store_id": "0324",
+          "store_name": "Pickering",
+          "area": "Pickering",
+          "region": "Durham",
+          "previous": 7,
+          "current": 15,
+          "delta": 8
+        },
+        {
+          "store_id": "0459",
+          "store_name": "Eglinton & Laird",
+          "area": "Toronto",
+          "region": "Toronto",
+          "previous": 4,
+          "current": 12,
+          "delta": 8
+        },
+        {
+          "store_id": "0621",
+          "store_name": "Liberty Village",
+          "area": "Toronto",
+          "region": "Toronto",
+          "previous": 11,
+          "current": 17,
+          "delta": 6
+        },
+        {
+          "store_id": "0305",
+          "store_name": "Bramalea",
+          "area": "Brampton",
+          "region": "Peel Region",
+          "previous": 8,
+          "current": 22,
+          "delta": 14
+        },
+        {
+          "store_id": "0159",
+          "store_name": "Georgetown",
+          "area": "Halton Hills / Georgetown",
+          "region": "Halton Region",
+          "previous": 6,
+          "current": 14,
+          "delta": 8
+        },
+        {
+          "store_id": "0660",
+          "store_name": "Peterborough North",
+          "area": "Peterborough",
+          "region": "Peterborough",
+          "previous": 20,
+          "current": 26,
+          "delta": 6
+        }
+      ]
     }
   ]
 }
