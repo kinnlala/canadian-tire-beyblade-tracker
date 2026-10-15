@@ -1071,6 +1071,24 @@
           "delta": 6
         }
       ]
+    },
+    {
+      "event_id": "20261015T181727Z-43197737b2",
+      "checked_at": "2026-10-15T18:17:27Z",
+      "sku": "1501281",
+      "canadian_tire_item": "150-1281-6",
+      "product": "BeyBlade X Starter Pack",
+      "changes": [
+        {
+          "store_id": "0075",
+          "store_name": "Oshawa Mid",
+          "area": "Oshawa",
+          "region": "Durham",
+          "previous": 16,
+          "current": 24,
+          "delta": 8
+        }
+      ]
     }
   ]
 }
