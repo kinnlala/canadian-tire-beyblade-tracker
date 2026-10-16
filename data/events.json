@@ -1116,6 +1116,33 @@
           "delta": 6
         }
       ]
+    },
+    {
+      "event_id": "20261016T195729Z-a0790fb62a",
+      "checked_at": "2026-10-16T19:57:29Z",
+      "sku": "1501281",
+      "canadian_tire_item": "150-1281-6",
+      "product": "BeyBlade X Starter Pack",
+      "changes": [
+        {
+          "store_id": "0411",
+          "store_name": "Trinity Common",
+          "area": "Brampton",
+          "region": "Peel Region",
+          "previous": 4,
+          "current": 12,
+          "delta": 8
+        },
+        {
+          "store_id": "0424",
+          "store_name": "Winston Churchill",
+          "area": "Oakville",
+          "region": "Halton Region",
+          "previous": 0,
+          "current": 8,
+          "delta": 8
+        }
+      ]
     }
   ]
 }
