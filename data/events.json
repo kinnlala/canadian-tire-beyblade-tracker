@@ -1161,6 +1161,24 @@
           "delta": 16
         }
       ]
+    },
+    {
+      "event_id": "20261022T183207Z-5b80f4e977",
+      "checked_at": "2026-10-22T18:32:07Z",
+      "sku": "1501281",
+      "canadian_tire_item": "150-1281-6",
+      "product": "BeyBlade X Starter Pack",
+      "changes": [
+        {
+          "store_id": "0321",
+          "store_name": "Dufferin & 407 (Thornhill)",
+          "area": "Thornhill",
+          "region": "York Region",
+          "previous": 16,
+          "current": 24,
+          "delta": 8
+        }
+      ]
     }
   ]
 }
