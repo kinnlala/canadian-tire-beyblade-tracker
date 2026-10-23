@@ -1197,6 +1197,24 @@
           "delta": 4
         }
       ]
+    },
+    {
+      "event_id": "20261023T182033Z-d4016c7d89",
+      "checked_at": "2026-10-23T18:20:33Z",
+      "sku": "1501281",
+      "canadian_tire_item": "150-1281-6",
+      "product": "BeyBlade X Starter Pack",
+      "changes": [
+        {
+          "store_id": "0237",
+          "store_name": "Woodbridge",
+          "area": "Woodbridge / Vaughan",
+          "region": "York Region",
+          "previous": 6,
+          "current": 26,
+          "delta": 20
+        }
+      ]
     }
   ]
 }
