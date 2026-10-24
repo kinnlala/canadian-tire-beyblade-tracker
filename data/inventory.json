@@ -4,12 +4,16 @@
   "canadian_tire_item": "150-1281-6",
   "product": "BeyBlade X Starter Pack",
   "source": "Canadian Tire PriceAvailability API",
-  "checked_at": "2026-10-24T05:52:45Z",
+  "checked_at": "2026-10-24T10:58:40Z",
   "baseline_complete": true,
-  "fresh_store_count": 60,
+  "fresh_store_count": 45,
   "known_store_count": 60,
   "last_run_alert": null,
-  "errors": {},
+  "errors": {
+    "Peel Region": "Canadian Tire API did not return quantities for: 0346, 0411, 0497, 0675",
+    "Halton Region": "Halton Region: all Canadian Tire API requests failed (0159: store 0159: HTTP Error 403: Forbidden; 0140: store 0140: HTTP Error 403: Forbidden; 0143: store 0143: HTTP Error 403: Forbidden; 0122: store 0122: HTTP Error 403: Forbidden; 0412: store 0412: HTTP Error 403: Forbidden)",
+    "Peterborough + Barrie": "Peterborough + Barrie: all Canadian Tire API requests failed (0444: store 0444: HTTP Error 403: Forbidden; 0081: store 0081: HTTP Error 403: Forbidden; 0660: store 0660: HTTP Error 403: Forbidden; 0006: store 0006: HTTP Error 403: Forbidden)"
+  },
   "stores": {
     "0187": {
       "name": "Whitby South",
@@ -19,7 +23,7 @@
       "previous_quantity": 2,
       "delta": 0,
       "fresh": true,
-      "last_success_at": "2026-10-24T05:52:45Z"
+      "last_success_at": "2026-10-24T10:58:40Z"
     },
     "0460": {
       "name": "Whitby North",
@@ -29,7 +33,7 @@
       "previous_quantity": 13,
       "delta": 0,
       "fresh": true,
-      "last_success_at": "2026-10-24T05:52:45Z"
+      "last_success_at": "2026-10-24T10:58:40Z"
     },
     "0075": {
       "name": "Oshawa Mid",
@@ -39,7 +43,7 @@
       "previous_quantity": 25,
       "delta": 0,
       "fresh": true,
-      "last_success_at": "2026-10-24T05:52:45Z"
+      "last_success_at": "2026-10-24T10:58:40Z"
     },
     "0336": {
       "name": "Oshawa North",
@@ -49,7 +53,7 @@
       "previous_quantity": 11,
       "delta": 0,
       "fresh": true,
-      "last_success_at": "2026-10-24T05:52:45Z"
+      "last_success_at": "2026-10-24T10:58:40Z"
     },
     "0160": {
       "name": "Ajax",
@@ -59,7 +63,7 @@
       "previous_quantity": 31,
       "delta": 0,
       "fresh": true,
-      "last_success_at": "2026-10-24T05:52:45Z"
+      "last_success_at": "2026-10-24T10:58:40Z"
     },
     "0324": {
       "name": "Pickering",
@@ -69,7 +73,7 @@
       "previous_quantity": 11,
       "delta": 0,
       "fresh": true,
-      "last_success_at": "2026-10-24T05:52:45Z"
+      "last_success_at": "2026-10-24T10:58:40Z"
     },
     "0170": {
       "name": "Bowmanville",
@@ -79,7 +83,7 @@
       "previous_quantity": 63,
       "delta": 0,
       "fresh": true,
-      "last_success_at": "2026-10-24T05:52:45Z"
+      "last_success_at": "2026-10-24T10:58:40Z"
     },
     "0127": {
       "name": "Uxbridge",
@@ -89,7 +93,7 @@
       "previous_quantity": 10,
       "delta": 0,
       "fresh": true,
-      "last_success_at": "2026-10-24T05:52:45Z"
+      "last_success_at": "2026-10-24T10:58:40Z"
     },
     "0226": {
       "name": "Port Perry",
@@ -99,7 +103,7 @@
       "previous_quantity": 4,
       "delta": 0,
       "fresh": true,
-      "last_success_at": "2026-10-24T05:52:45Z"
+      "last_success_at": "2026-10-24T10:58:40Z"
     },
     "0164": {
       "name": "Markham",
@@ -109,7 +113,7 @@
       "previous_quantity": 1,
       "delta": 0,
       "fresh": true,
-      "last_success_at": "2026-10-24T05:52:45Z"
+      "last_success_at": "2026-10-24T10:58:40Z"
     },
     "0087": {
       "name": "Richmond Hill",
@@ -119,7 +123,7 @@
       "previous_quantity": 7,
       "delta": 0,
       "fresh": true,
-      "last_success_at": "2026-10-24T05:52:45Z"
+      "last_success_at": "2026-10-24T10:58:40Z"
     },
     "0697": {
       "name": "Richmond Hill North",
@@ -129,7 +133,7 @@
       "previous_quantity": 3,
       "delta": 0,
       "fresh": true,
-      "last_success_at": "2026-10-24T05:52:45Z"
+      "last_success_at": "2026-10-24T10:58:40Z"
     },
     "0399": {
       "name": "Markham East",
@@ -139,7 +143,7 @@
       "previous_quantity": 14,
       "delta": 0,
       "fresh": true,
-      "last_success_at": "2026-10-24T05:52:45Z"
+      "last_success_at": "2026-10-24T10:58:40Z"
     },
     "0653": {
       "name": "Maple (Vaughan)",
@@ -149,7 +153,7 @@
       "previous_quantity": 6,
       "delta": 0,
       "fresh": true,
-      "last_success_at": "2026-10-24T05:52:45Z"
+      "last_success_at": "2026-10-24T10:58:40Z"
     },
     "0237": {
       "name": "Woodbridge",
@@ -159,7 +163,7 @@
       "previous_quantity": 26,
       "delta": 0,
       "fresh": true,
-      "last_success_at": "2026-10-24T05:52:45Z"
+      "last_success_at": "2026-10-24T10:58:40Z"
     },
     "0321": {
       "name": "Dufferin & 407 (Thornhill)",
@@ -169,7 +173,7 @@
       "previous_quantity": 24,
       "delta": 0,
       "fresh": true,
-      "last_success_at": "2026-10-24T05:52:45Z"
+      "last_success_at": "2026-10-24T10:58:40Z"
     },
     "0189": {
       "name": "Aurora",
@@ -179,7 +183,7 @@
       "previous_quantity": 2,
       "delta": 0,
       "fresh": true,
-      "last_success_at": "2026-10-24T05:52:45Z"
+      "last_success_at": "2026-10-24T10:58:40Z"
     },
     "0069": {
       "name": "Newmarket",
@@ -189,7 +193,7 @@
       "previous_quantity": 17,
       "delta": 0,
       "fresh": true,
-      "last_success_at": "2026-10-24T05:52:45Z"
+      "last_success_at": "2026-10-24T10:58:40Z"
     },
     "0280": {
       "name": "Stouffville",
@@ -199,7 +203,7 @@
       "previous_quantity": 10,
       "delta": 0,
       "fresh": true,
-      "last_success_at": "2026-10-24T05:52:45Z"
+      "last_success_at": "2026-10-24T10:58:40Z"
     },
     "0134": {
       "name": "Keswick",
@@ -209,7 +213,7 @@
       "previous_quantity": 10,
       "delta": 0,
       "fresh": true,
-      "last_success_at": "2026-10-24T05:52:45Z"
+      "last_success_at": "2026-10-24T10:58:40Z"
     },
     "0019": {
       "name": "Lawrence & Allen Expwy",
@@ -219,7 +223,7 @@
       "previous_quantity": 0,
       "delta": 0,
       "fresh": true,
-      "last_success_at": "2026-10-24T05:52:45Z"
+      "last_success_at": "2026-10-24T10:58:40Z"
     },
     "0030": {
       "name": "Warden & Eglinton",
@@ -229,7 +233,7 @@
       "previous_quantity": 15,
       "delta": 0,
       "fresh": true,
-      "last_success_at": "2026-10-24T05:52:45Z"
+      "last_success_at": "2026-10-24T10:58:40Z"
     },
     "0070": {
       "name": "The Queensway",
@@ -239,7 +243,7 @@
       "previous_quantity": 16,
       "delta": 0,
       "fresh": true,
-      "last_success_at": "2026-10-24T05:52:45Z"
+      "last_success_at": "2026-10-24T10:58:40Z"
     },
     "0119": {
       "name": "Islington & 401",
@@ -249,7 +253,7 @@
       "previous_quantity": 7,
       "delta": 0,
       "fresh": true,
-      "last_success_at": "2026-10-24T05:52:45Z"
+      "last_success_at": "2026-10-24T10:58:40Z"
     },
     "0126": {
       "name": "Yonge & Steeles",
@@ -259,7 +263,7 @@
       "previous_quantity": 4,
       "delta": 0,
       "fresh": true,
-      "last_success_at": "2026-10-24T05:52:45Z"
+      "last_success_at": "2026-10-24T10:58:40Z"
     },
     "0150": {
       "name": "Yonge & Church",
@@ -269,7 +273,7 @@
       "previous_quantity": 32,
       "delta": 0,
       "fresh": true,
-      "last_success_at": "2026-10-24T05:52:45Z"
+      "last_success_at": "2026-10-24T10:58:40Z"
     },
     "0175": {
       "name": "Cedarbrae",
@@ -279,7 +283,7 @@
       "previous_quantity": 7,
       "delta": 0,
       "fresh": true,
-      "last_success_at": "2026-10-24T05:52:45Z"
+      "last_success_at": "2026-10-24T10:58:40Z"
     },
     "0182": {
       "name": "West Toronto (Stockyards)",
@@ -289,7 +293,7 @@
       "previous_quantity": 7,
       "delta": 0,
       "fresh": true,
-      "last_success_at": "2026-10-24T05:52:45Z"
+      "last_success_at": "2026-10-24T10:58:40Z"
     },
     "0192": {
       "name": "Sheppard Ave.",
@@ -299,7 +303,7 @@
       "previous_quantity": 25,
       "delta": 0,
       "fresh": true,
-      "last_success_at": "2026-10-24T05:52:45Z"
+      "last_success_at": "2026-10-24T10:58:40Z"
     },
     "0209": {
       "name": "Kingston Rd",
@@ -309,7 +313,7 @@
       "previous_quantity": 0,
       "delta": 0,
       "fresh": true,
-      "last_success_at": "2026-10-24T05:52:45Z"
+      "last_success_at": "2026-10-24T10:58:40Z"
     },
     "0214": {
       "name": "Eglinton & Caledonia",
@@ -319,7 +323,7 @@
       "previous_quantity": 25,
       "delta": 0,
       "fresh": true,
-      "last_success_at": "2026-10-24T05:52:45Z"
+      "last_success_at": "2026-10-24T10:58:40Z"
     },
     "0264": {
       "name": "Agincourt",
@@ -329,7 +333,7 @@
       "previous_quantity": 0,
       "delta": 0,
       "fresh": true,
-      "last_success_at": "2026-10-24T05:52:45Z"
+      "last_success_at": "2026-10-24T10:58:40Z"
     },
     "0273": {
       "name": "Main & Danforth",
@@ -339,7 +343,7 @@
       "previous_quantity": 12,
       "delta": 0,
       "fresh": true,
-      "last_success_at": "2026-10-24T05:52:45Z"
+      "last_success_at": "2026-10-24T10:58:40Z"
     },
     "0294": {
       "name": "Albion & Kipling",
@@ -349,7 +353,7 @@
       "previous_quantity": 18,
       "delta": 0,
       "fresh": true,
-      "last_success_at": "2026-10-24T05:52:45Z"
+      "last_success_at": "2026-10-24T10:58:40Z"
     },
     "0427": {
       "name": "Scarborough East (Rylander)",
@@ -359,7 +363,7 @@
       "previous_quantity": 29,
       "delta": 0,
       "fresh": true,
-      "last_success_at": "2026-10-24T05:52:45Z"
+      "last_success_at": "2026-10-24T10:58:40Z"
     },
     "0459": {
       "name": "Eglinton & Laird",
@@ -369,7 +373,7 @@
       "previous_quantity": 12,
       "delta": 0,
       "fresh": true,
-      "last_success_at": "2026-10-24T05:52:45Z"
+      "last_success_at": "2026-10-24T10:58:40Z"
     },
     "0600": {
       "name": "Toronto Eaton Centre",
@@ -379,7 +383,7 @@
       "previous_quantity": 588,
       "delta": 0,
       "fresh": true,
-      "last_success_at": "2026-10-24T05:52:45Z"
+      "last_success_at": "2026-10-24T10:58:40Z"
     },
     "0621": {
       "name": "Liberty Village",
@@ -389,7 +393,7 @@
       "previous_quantity": 14,
       "delta": 0,
       "fresh": true,
-      "last_success_at": "2026-10-24T05:52:45Z"
+      "last_success_at": "2026-10-24T10:58:40Z"
     },
     "0654": {
       "name": "Leslie & Lake Shore",
@@ -399,7 +403,7 @@
       "previous_quantity": 22,
       "delta": 0,
       "fresh": true,
-      "last_success_at": "2026-10-24T05:52:45Z"
+      "last_success_at": "2026-10-24T10:58:40Z"
     },
     "0010": {
       "name": "Brampton Shoppers World",
@@ -409,7 +413,7 @@
       "previous_quantity": 8,
       "delta": 0,
       "fresh": true,
-      "last_success_at": "2026-10-24T05:52:45Z"
+      "last_success_at": "2026-10-24T10:58:40Z"
     },
     "0152": {
       "name": "Dixie & Dundas",
@@ -419,7 +423,7 @@
       "previous_quantity": 4,
       "delta": 0,
       "fresh": true,
-      "last_success_at": "2026-10-24T05:52:45Z"
+      "last_success_at": "2026-10-24T10:58:40Z"
     },
     "0169": {
       "name": "Meadowvale",
@@ -429,7 +433,7 @@
       "previous_quantity": 4,
       "delta": 0,
       "fresh": true,
-      "last_success_at": "2026-10-24T05:52:45Z"
+      "last_success_at": "2026-10-24T10:58:40Z"
     },
     "0197": {
       "name": "Bolton",
@@ -439,7 +443,7 @@
       "previous_quantity": 4,
       "delta": 0,
       "fresh": true,
-      "last_success_at": "2026-10-24T05:52:45Z"
+      "last_success_at": "2026-10-24T10:58:40Z"
     },
     "0241": {
       "name": "Southdown",
@@ -449,7 +453,7 @@
       "previous_quantity": 4,
       "delta": 0,
       "fresh": true,
-      "last_success_at": "2026-10-24T05:52:45Z"
+      "last_success_at": "2026-10-24T10:58:40Z"
     },
     "0305": {
       "name": "Bramalea",
@@ -459,7 +463,7 @@
       "previous_quantity": 18,
       "delta": 0,
       "fresh": true,
-      "last_success_at": "2026-10-24T05:52:45Z"
+      "last_success_at": "2026-10-24T10:58:40Z"
     },
     "0346": {
       "name": "Mavis & Dundas",
@@ -467,8 +471,8 @@
       "region": "Peel Region",
       "quantity": 11,
       "previous_quantity": 11,
-      "delta": 0,
-      "fresh": true,
+      "delta": null,
+      "fresh": false,
       "last_success_at": "2026-10-24T05:52:45Z"
     },
     "0411": {
@@ -477,8 +481,8 @@
       "region": "Peel Region",
       "quantity": 10,
       "previous_quantity": 10,
-      "delta": 0,
-      "fresh": true,
+      "delta": null,
+      "fresh": false,
       "last_success_at": "2026-10-24T05:52:45Z"
     },
     "0497": {
@@ -487,8 +491,8 @@
       "region": "Peel Region",
       "quantity": 7,
       "previous_quantity": 7,
-      "delta": 0,
-      "fresh": true,
+      "delta": null,
+      "fresh": false,
       "last_success_at": "2026-10-24T05:52:45Z"
     },
     "0675": {
@@ -497,8 +501,8 @@
       "region": "Peel Region",
       "quantity": 20,
       "previous_quantity": 20,
-      "delta": 0,
-      "fresh": true,
+      "delta": null,
+      "fresh": false,
       "last_success_at": "2026-10-24T05:52:45Z"
     },
     "0122": {
@@ -507,8 +511,8 @@
       "region": "Halton Region",
       "quantity": 64,
       "previous_quantity": 64,
-      "delta": 0,
-      "fresh": true,
+      "delta": null,
+      "fresh": false,
       "last_success_at": "2026-10-24T05:52:45Z"
     },
     "0140": {
@@ -517,8 +521,8 @@
       "region": "Halton Region",
       "quantity": 17,
       "previous_quantity": 17,
-      "delta": 0,
-      "fresh": true,
+      "delta": null,
+      "fresh": false,
       "last_success_at": "2026-10-24T05:52:45Z"
     },
     "0143": {
@@ -527,8 +531,8 @@
       "region": "Halton Region",
       "quantity": 13,
       "previous_quantity": 13,
-      "delta": 0,
-      "fresh": true,
+      "delta": null,
+      "fresh": false,
       "last_success_at": "2026-10-24T05:52:45Z"
     },
     "0159": {
@@ -537,8 +541,8 @@
       "region": "Halton Region",
       "quantity": 11,
       "previous_quantity": 11,
-      "delta": 0,
-      "fresh": true,
+      "delta": null,
+      "fresh": false,
       "last_success_at": "2026-10-24T05:52:45Z"
     },
     "0412": {
@@ -547,8 +551,8 @@
       "region": "Halton Region",
       "quantity": 5,
       "previous_quantity": 5,
-      "delta": 0,
-      "fresh": true,
+      "delta": null,
+      "fresh": false,
       "last_success_at": "2026-10-24T05:52:45Z"
     },
     "0424": {
@@ -557,8 +561,8 @@
       "region": "Halton Region",
       "quantity": 6,
       "previous_quantity": 6,
-      "delta": 0,
-      "fresh": true,
+      "delta": null,
+      "fresh": false,
       "last_success_at": "2026-10-24T05:52:45Z"
     },
     "0429": {
@@ -567,8 +571,8 @@
       "region": "Halton Region",
       "quantity": 77,
       "previous_quantity": 77,
-      "delta": 0,
-      "fresh": true,
+      "delta": null,
+      "fresh": false,
       "last_success_at": "2026-10-24T05:52:45Z"
     },
     "0081": {
@@ -577,8 +581,8 @@
       "region": "Peterborough",
       "quantity": 38,
       "previous_quantity": 38,
-      "delta": 0,
-      "fresh": true,
+      "delta": null,
+      "fresh": false,
       "last_success_at": "2026-10-24T05:52:45Z"
     },
     "0660": {
@@ -587,8 +591,8 @@
       "region": "Peterborough",
       "quantity": 26,
       "previous_quantity": 26,
-      "delta": 0,
-      "fresh": true,
+      "delta": null,
+      "fresh": false,
       "last_success_at": "2026-10-24T05:52:45Z"
     },
     "0006": {
@@ -597,8 +601,8 @@
       "region": "Barrie",
       "quantity": 14,
       "previous_quantity": 14,
-      "delta": 0,
-      "fresh": true,
+      "delta": null,
+      "fresh": false,
       "last_success_at": "2026-10-24T05:52:45Z"
     },
     "0444": {
@@ -607,8 +611,8 @@
       "region": "Barrie",
       "quantity": 0,
       "previous_quantity": 0,
-      "delta": 0,
-      "fresh": true,
+      "delta": null,
+      "fresh": false,
       "last_success_at": "2026-10-24T05:52:45Z"
     }
   },
@@ -617,8 +621,6 @@
     "York Region": "https://www.canadiantire.ca/api/v1/product/api/v2/product/sku/PriceAvailability (per-store POST; 11/11 succeeded)",
     "Toronto West + Central": "https://www.canadiantire.ca/api/v1/product/api/v2/product/sku/PriceAvailability (per-store POST; 10/10 succeeded)",
     "Toronto East + North": "https://www.canadiantire.ca/api/v1/product/api/v2/product/sku/PriceAvailability (per-store POST; 9/9 succeeded)",
-    "Peel Region": "https://www.canadiantire.ca/api/v1/product/api/v2/product/sku/PriceAvailability (per-store POST; 10/10 succeeded)",
-    "Halton Region": "https://www.canadiantire.ca/api/v1/product/api/v2/product/sku/PriceAvailability (per-store POST; 7/7 succeeded)",
-    "Peterborough + Barrie": "https://www.canadiantire.ca/api/v1/product/api/v2/product/sku/PriceAvailability (per-store POST; 4/4 succeeded)"
+    "Peel Region": "https://www.canadiantire.ca/api/v1/product/api/v2/product/sku/PriceAvailability (per-store POST; 6/10 succeeded)"
   }
 }
