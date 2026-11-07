@@ -1,88 +1,51 @@
-# Canadian Tire BeyBlade Starter Restock Watch
+# Beyblade Restock Tracker
 
-Tracks **BeyBlade X Starter Pack** — Canadian Tire product **#150-1281-6**
-(StockTrack SKU **1501281**) across 24 selected Canadian Tire locations in
-Durham Region, York Region, Peterborough, and Barrie.
+Personal stock monitoring for Canadian Tire and Real Canadian Superstore.
 
-## Alert rule
+I built this to avoid checking store pages by hand. Python scripts collect stock readings, record qualifying changes, and save events for my separate ChatGPT scheduled tasks to review and notify me.
 
-A store qualifies only when its numeric quantity:
+[Canadian Tire code](tracker.py) · [Superstore code](superstore/tracker.py) · [Tests](docs/SETUP.md#tests) · [Setup](docs/SETUP.md)
 
-- increases by **3 or more** versus the immediately previous successful reading; or
-- changes from **0 to 3 or more**.
+## How it works
 
-The first successful reading for each individual store becomes that store's
-baseline and never generates an alert.
+```text
+Scheduled checks → stock comparison → saved restock events → ChatGPT notification
+```
 
-If a StockTrack request fails, that store's last known quantity is retained.
-Missing data is **never** treated as zero.
+GitHub Actions schedules the collectors hourly. This repository handles collection and event detection; the ChatGPT tasks are configured separately. Cloning the repository does not create notifications.
 
-## Files
+## What it tracks
 
-- `tracker.py` — fetches and compares store quantities.
-- `data/inventory.json` — latest state for all 24 stores.
-- `data/events.json` — durable list of qualifying restock events.
-- `data/history.ndjson` — one compact history record per run.
-- `.github/workflows/stock-watch.yml` — hourly GitHub Actions schedule.
+| Retailer | Product | Configured coverage | Restock rule |
+| --- | --- | --- | --- |
+| Canadian Tire | Starter Pack `150-1281-6` | 60 stores: GTA, Peterborough and Barrie | Quantity increases by 3 or more |
+| Real Canadian Superstore | Starter Pack Assortment `21595715_EA` | 17 stores: GTA and Peterborough | `OUT → LOW`, `OUT → OK`, or `LOW → OK` |
 
-## GitHub setup
+Store lists live in [tracker.py](tracker.py) and [superstore/config.json](superstore/config.json). Coverage means configured stores, not guaranteed successful readings. Superstore reports availability status, not a reliable item count.
 
-1. Create a **public** GitHub repository named `canadian-tire-beyblade-tracker`.
-2. Put these files in the repository's `main` branch.
-3. Open **Actions** and enable workflows if GitHub asks.
-4. Open the **Beyblade stock watch** workflow and choose **Run workflow** once.
-5. Confirm `data/inventory.json` now contains numeric quantities for the stores
-   that were successfully read.
+## Example
 
-The repository needs to be public only because the ChatGPT watch reads the raw
-`events.json` file without your GitHub login. The files contain only store
-inventory data; there are no credentials or secrets.
+Illustrative readings for one Canadian Tire store:
 
-## ChatGPT bridge URLs
+```text
+First reading:  2 units  → establish baseline; no event
+Next reading:  10 units  → +8 units; record a restock event
+Request fails:          → retain 10 as last known; mark it stale
+```
 
-After the repository is created under GitHub user `kinnlala`, the two bridge
-URLs are:
+The first successful reading never triggers an event. Failed requests and missing products are not treated as zero stock or sold out.
 
-- `https://raw.githubusercontent.com/kinnlala/canadian-tire-beyblade-tracker/main/data/inventory.json`
-- `https://raw.githubusercontent.com/kinnlala/canadian-tire-beyblade-tracker/main/data/events.json`
+## Explore the results
 
-The ChatGPT automation should read `events.json`, compare the newest
-`event_id` with the last notified event ID, and notify only for a new event.
+| Retailer | Last-known readings | Recorded restocks | Tests |
+| --- | --- | --- | --- |
+| Canadian Tire | [Inventory](data/inventory.json) | [Events](data/events.json) | [Quantity parsing](tests/test_tracker.py) |
+| Superstore | [Store status](superstore/data/status.json) | [Events](superstore/data/events.json) | [Status handling](superstore/tests/test_tracker.py) |
 
-## Stores
+Start with the [offline tests](docs/SETUP.md#tests) to inspect the project without retailer credentials. The setup guide also explains local runs and the event files used by the ChatGPT tasks.
 
-### Durham
-- 0187 — Whitby South
-- 0460 — Whitby North
-- 0075 — Oshawa Mid
-- 0336 — Oshawa North
-- 0160 — Ajax
-- 0324 — Pickering
-- 0170 — Bowmanville
-- 0127 — Uxbridge
-- 0226 — Port Perry
+## Limitations
 
-### York Region
-- 0164 — Markham
-- 0087 — Richmond Hill
-- 0697 — Richmond Hill North
-- 0399 — Markham East
-- 0653 — Maple (Vaughan)
-- 0237 — Woodbridge
-- 0321 — Dufferin & 407 (Thornhill)
-- 0189 — Aurora
-- 0069 — Newmarket
-- 0280 — Stouffville
-- 0134 — Keswick
+Retailer requests can fail or be blocked. Check each store's `fresh` and `last_success_at` fields before using a saved reading; a completed workflow is not proof of fresh data.
 
-### Peterborough + Barrie
-- 0081 — Peterborough
-- 0660 — Peterborough North
-- 0006 — Barrie
-- 0444 — Barrie South
-
-## Source
-
-The tracker calls StockTrack's public Canadian Tire multi-store availability
-endpoint. StockTrack is independent of Canadian Tire, and inventory counts can
-be inaccurate or delayed. Call the store before making a special trip.
+These are assortment listings, not specific Beyblade models. This is an unofficial personal tool, not a retailer service. Confirm availability with the store before travelling.
