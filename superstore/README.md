@@ -1,114 +1,59 @@
-# Real Canadian Superstore Beyblade Restock Tracker
+# Superstore collector
 
-Tracks **Beyblade X Starter Pack Set Assortment** (`21595715_EA`) through the
-current PC Express backend.
+[Project overview](../README.md) · [Offline tests](../docs/SETUP.md#tests) · [Source](tracker.py)
 
-## What this tracker can reliably observe
+Tracks Beyblade X Starter Pack Set Assortment (`21595715_EA`) at the stores in [config.json](config.json).
 
-PC Express exposes store-specific `stockStatus`, but it does not expose a
-trustworthy numeric on-hand count. Testing showed that `maxOrderQuantity=25`
-is an ordering cap: an OUT store can still report 25.
+## Availability, not quantities
 
-This tracker therefore records these normalized statuses:
+The collector uses PC Express `stockStatus`:
 
-- `OUT` — out of stock
-- `LOW` — low stock
-- `OK` — available
+| Value | Meaning |
+| --- | --- |
+| `OUT` | Out of stock |
+| `LOW` | Low stock |
+| `OK` | Available |
 
-A restock event is created only for an improvement:
+`maxOrderQuantity` is an ordering limit, not a trustworthy stock count, so it is not used to measure inventory.
 
-- `OUT -> LOW`
-- `OUT -> OK`
-- `LOW -> OK`
+Only `OUT → LOW`, `OUT → OK`, and `LOW → OK` create events. The first successful reading establishes a baseline. Failed requests, missing products, and missing statuses retain the last known reading rather than turning it into `OUT`.
 
-The first successful reading at each store becomes its baseline and does not
-generate an alert.
+The saved files are [status.json](data/status.json), [events.json](data/events.json), and [history.ndjson](data/history.ndjson). Check `fresh` and `last_success_at` before treating a status as current. `NOT_RETURNED` means the search did not return the product; it does not mean sold out.
 
-API failures and successful searches that do not return the product are **not**
-treated as OUT and do not overwrite the last known good status.
+## Running the collector
 
-## Stores
+**Offline tests need no credentials.** Follow the [test instructions](../docs/SETUP.md#tests).
 
-### Durham
-- `1012` — Kingston Road, Ajax
-- `1043` — Harmony Road, Oshawa
-- `1058` — Taunton Road, Whitby
-- `2842` — Gibb Street, Oshawa
+Live collection needs your own authorized PC ID token state. The personal login helper referenced as `login_pcid.py` in error messages is **not included in this repository**. A fresh clone is therefore not enough to configure a new account.
 
-### York Region
-- `1018` — Yonge Street, Newmarket / East Gwillimbury
-- `1030` — Bayview Avenue, Aurora
+For an already authorized setup, [auth.py](auth.py) loads `.state/pcid_token_state.json`, or uses `PCEXPRESS_REFRESH_TOKEN` when no local state exists. Then, from this directory:
 
-### Peterborough
-- `2831` — Borden Avenue, Peterborough
-
-### Barrie
-No physical Real Canadian Superstore location is included because Barrie does
-not currently have a physical RCSS store.
-
-## Why token state is encrypted
-
-PC ID refresh tokens rotate: once a refresh token is used, the returned newer
-refresh token must be saved for the next run.
-
-GitHub Actions runners are temporary, so this tracker stores the latest PC ID
-state as `data/pcid_state.enc`. That file is encrypted with a Fernet key kept
-only in the GitHub Actions secret `PCEXPRESS_STATE_KEY`.
-
-The plaintext token state is never committed.
-
-## GitHub Secrets you need
-
-In your repository:
-
-`Settings -> Secrets and variables -> Actions -> New repository secret`
-
-Create:
-
-### 1. PCEXPRESS_REFRESH_TOKEN
-
-Use the refresh token produced by `login_pcid.py`.
-
-If you already ran the local probes, your original printed token has probably
-been consumed. Use the latest `refresh_token` inside your local
-`.pcx-state/pcid_token_state.json`, or run `login_pcid.py` one more time to
-create a fresh token chain.
-
-**Never commit or paste this token into a public file.**
-
-### 2. PCEXPRESS_STATE_KEY
-
-Generate a random key locally:
-
-```text
-python -c "import os,base64; print(base64.urlsafe_b64encode(os.urandom(32)).decode())"
+```sh
+python -m pip install -r requirements.txt
+python tracker.py
 ```
 
-Copy the result into the GitHub secret named `PCEXPRESS_STATE_KEY`.
+This updates local files. It does not send notifications or push changes to GitHub. Do not run local experiments against the same rotating token chain used by the scheduled workflow.
 
-Do not put this key in the repository.
+## Scheduled authorization state
 
-## First run
+The [GitHub Actions workflow](../.github/workflows/superstore-stock-watch.yml) uses:
 
-Once the files and both secrets exist:
+| Secret | Purpose |
+| --- | --- |
+| `PCEXPRESS_REFRESH_TOKEN` | Seeds an authorized setup when saved state is absent |
+| `PCEXPRESS_STATE_KEY` | Encrypts and decrypts the saved state with Fernet |
 
-1. Go to `Actions`.
-2. Open `Superstore Beyblade stock watch`.
-3. Click `Run workflow`.
-4. Wait for it to complete.
-5. Open `superstore/data/status.json`.
+Refresh tokens can rotate. The workflow decrypts `data/pcid_state.enc`, runs the collector, and saves the latest state encrypted again. The encryption key stays in GitHub Actions secrets, not in the repository.
 
-The first successful run establishes the baseline and should not alert you.
+For a separate authorized setup, generate a **new** key locally:
 
-## Files
+```sh
+python -c "from cryptography.fernet import Fernet; print(Fernet.generate_key().decode())"
+```
 
-- `config.json` — product and store list
-- `auth.py` — rotating PC ID token manager
-- `secure_state.py` — encrypts/decrypts PC ID state
-- `tracker.py` — hourly store checker and transition comparison
-- `data/status.json` — latest known store status
-- `data/events.json` — durable qualifying restock events
-- `data/history.ndjson` — hourly history
-- `data/pcid_state.enc` — generated after first run; encrypted token state
+Store it privately as `PCEXPRESS_STATE_KEY`. A new key cannot decrypt this repository's existing encrypted state. A separate fork needs its own state; do not replace the key or state used by the running tracker.
 
-The ChatGPT alert should read only `superstore/data/events.json`.
+Plaintext authorization state and local virtual environments are not protected by an existing repository `.gitignore`. Keep them out of commits. Never paste tokens or keys into issues, logs, or documentation.
+
+The separate ChatGPT task reads only the [event feed](data/events.json), not authorization state.
