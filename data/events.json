@@ -1260,6 +1260,42 @@
           "delta": 4
         }
       ]
+    },
+    {
+      "event_id": "20261112T185454Z-01b00e06d7",
+      "checked_at": "2026-11-12T18:54:54Z",
+      "sku": "1501281",
+      "canadian_tire_item": "150-1281-6",
+      "product": "BeyBlade X Starter Pack",
+      "changes": [
+        {
+          "store_id": "0459",
+          "store_name": "Eglinton & Laird",
+          "area": "Toronto",
+          "region": "Toronto",
+          "previous": 3,
+          "current": 11,
+          "delta": 8
+        },
+        {
+          "store_id": "0241",
+          "store_name": "Southdown",
+          "area": "Mississauga",
+          "region": "Peel Region",
+          "previous": 3,
+          "current": 8,
+          "delta": 5
+        },
+        {
+          "store_id": "0444",
+          "store_name": "Barrie South",
+          "area": "Barrie",
+          "region": "Barrie",
+          "previous": 0,
+          "current": 3,
+          "delta": 3
+        }
+      ]
     }
   ]
 }
