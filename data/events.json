@@ -1341,6 +1341,24 @@
           "delta": 4
         }
       ]
+    },
+    {
+      "event_id": "20261125T223059Z-e7030541b5",
+      "checked_at": "2026-11-25T22:30:59Z",
+      "sku": "1501281",
+      "canadian_tire_item": "150-1281-6",
+      "product": "BeyBlade X Starter Pack",
+      "changes": [
+        {
+          "store_id": "0305",
+          "store_name": "Bramalea",
+          "area": "Brampton",
+          "region": "Peel Region",
+          "previous": 0,
+          "current": 4,
+          "delta": 4
+        }
+      ]
     }
   ]
 }
