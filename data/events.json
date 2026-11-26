@@ -1359,6 +1359,42 @@
           "delta": 4
         }
       ]
+    },
+    {
+      "event_id": "20261126T235156Z-41390b55b1",
+      "checked_at": "2026-11-26T23:51:56Z",
+      "sku": "1501281",
+      "canadian_tire_item": "150-1281-6",
+      "product": "BeyBlade X Starter Pack",
+      "changes": [
+        {
+          "store_id": "0070",
+          "store_name": "The Queensway",
+          "area": "Etobicoke",
+          "region": "Toronto",
+          "previous": 3,
+          "current": 7,
+          "delta": 4
+        },
+        {
+          "store_id": "0126",
+          "store_name": "Yonge & Steeles",
+          "area": "North York",
+          "region": "Toronto",
+          "previous": 0,
+          "current": 4,
+          "delta": 4
+        },
+        {
+          "store_id": "0192",
+          "store_name": "Sheppard Ave.",
+          "area": "North York",
+          "region": "Toronto",
+          "previous": 30,
+          "current": 34,
+          "delta": 4
+        }
+      ]
     }
   ]
 }
