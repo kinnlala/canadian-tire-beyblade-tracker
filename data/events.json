@@ -1395,6 +1395,24 @@
           "delta": 4
         }
       ]
+    },
+    {
+      "event_id": "20261127T185816Z-19d45a8aca",
+      "checked_at": "2026-11-27T18:58:16Z",
+      "sku": "1501281",
+      "canadian_tire_item": "150-1281-6",
+      "product": "BeyBlade X Starter Pack",
+      "changes": [
+        {
+          "store_id": "0399",
+          "store_name": "Markham East",
+          "area": "Markham",
+          "region": "York Region",
+          "previous": 9,
+          "current": 13,
+          "delta": 4
+        }
+      ]
     }
   ]
 }
